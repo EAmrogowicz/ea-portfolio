@@ -1,0 +1,52 @@
+.navbar * {
+  position: relative;
+  z-index: 2;
+}
+
+.navbar-brand {
+  display: inline-block;
+}
+
+.navbar {
+  padding: 0.2rem;
+  padding-left: 3.2rem;
+  background-color: rgba(51, 76, 83, 1);
+  font-size: 1rem;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  color: #d6dcdd;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: #ce9334;
+}
+
+.home:link,
+.home:visited {
+  font-family: "Roboto";
+  font-size: 1.2rem;
+  color: #ce9334;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.home:hover,
+.home:active {
+  color: white;
+}

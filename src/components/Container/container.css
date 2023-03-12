@@ -1,0 +1,26 @@
+body {
+  background-color: #334c53;
+}
+
+.container {
+  width: 100%;
+  height: calc(100vh - 60px);
+  background-color: #334c53;
+  color: white;
+}
+.container * {
+  position: relative;
+  z-index: 2;
+}
+
+.container::after {
+  content: "";
+  display: block;
+  opacity: 0.4;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: black;
+}

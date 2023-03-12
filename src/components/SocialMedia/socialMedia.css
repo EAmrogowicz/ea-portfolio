@@ -1,0 +1,14 @@
+.socialLinks {
+  position: absolute;
+  bottom: 1rem;
+  z-index: 2;
+}
+
+.contactLink {
+  color: #d6dcdd;
+  font-size: 1.6rem;
+}
+
+.contactLink:hover {
+  color: #ce9334;
+}
