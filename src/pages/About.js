@@ -2,7 +2,7 @@ import React from "react";
 import Container from "../components/Container/container";
 import Grid from "@mui/material/Unstable_Grid2";
 import Box from "@mui/material/Box";
-import photo from "../hero-banner.avif";
+import Photo from "../components/Photo/photo";
 
 function About() {
   return (
@@ -24,7 +24,7 @@ function About() {
             </p>
           </Grid>
           <Grid xs={6}>
-            <img src={logo} alt="Logo" />;
+            <Photo />
           </Grid>
         </Grid>
       </Box>
