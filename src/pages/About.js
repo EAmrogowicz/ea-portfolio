@@ -1,15 +1,16 @@
 import React from "react";
 import Container from "../components/Container/container";
+import Box from "../components/Box/box";
 import Grid from "@mui/material/Unstable_Grid2";
-import Box from "@mui/material/Box";
-import Photo from "../components/Photo/photo";
+
+import Photo from "../components/PhotoBackground/photo";
 
 function About() {
   return (
     <Container>
-      <Box sx={{ width: "100%" }}>
-        <Grid container rowSpacing={1}>
-          <Grid xs={6}>
+      <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+        <Grid item xs={6}>
+          <Box>
             <h1>About</h1>
             <h3>
               Predominantly a landscape painter, Ewelina Amrogowicz is a Polish
@@ -22,12 +23,15 @@ function About() {
               photorealistic painting style. Currently expand her creative side
               in Web Development.
             </p>
-          </Grid>
-          <Grid xs={6}>
-            <Photo />
-          </Grid>
+          </Box>
         </Grid>
-      </Box>
+        <Grid xs={6}>
+          <Photo
+            photo={process.env.PUBLIC_URL + "ewelinastudio-painting.jpg"}
+            alt="Ewelina"
+          />
+        </Grid>
+      </Grid>
     </Container>
   );
 }

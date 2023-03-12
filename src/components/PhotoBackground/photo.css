@@ -1,0 +1,24 @@
+.imgGradient {
+  position: relative;
+  display: inline-block;
+}
+
+.imgGradient::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(51, 76, 83, 1));
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: -1;
+  display: block;
+  border-radius: 32px;
+}
