@@ -9,18 +9,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.hero::after {
-  content: "";
-  display: block;
-  opacity: 0.4;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: black;
+  padding: 0 2.4rem;
 }
 
 .hero * {
@@ -29,14 +18,13 @@
 }
 
 .hero h1 {
-  font-size: 4.8rem;
   line-height: 3.2rem;
   color: white;
   font-family: "Roboto";
-  margin-bottom: 0.4rem;
+  margin-bottom: 1.6rem;
 }
 
-.hero h2 {
+.hero h4 {
   color: #d6dcdd;
   letter-spacing: 2px;
   font-family: "Helvetica Neue";

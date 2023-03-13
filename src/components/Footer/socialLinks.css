@@ -1,7 +1,14 @@
 .socialLinks {
   position: absolute;
-  bottom: 1rem;
+  bottom: 0rem;
+  width: 100%;
+  /* background-color: rgba(51, 76, 83, 0.3); */
+  padding: 0.4rem;
   z-index: 2;
+}
+
+.socialLinksBox {
+  justify-content: center;
 }
 
 .contactLink {

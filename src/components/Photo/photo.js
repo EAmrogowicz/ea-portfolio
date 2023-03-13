@@ -3,11 +3,7 @@ import "./photo.css";
 
 function Photo(props) {
   // Import result is the URL of your image
-  return (
-    <div className="imgGradient">
-      <img src={props.photo} alt="{props.alt}" className="img" />
-    </div>
-  );
+  return <img src={props.photo} alt="{props.alt}" className="img" />;
 }
 
 export default Photo;

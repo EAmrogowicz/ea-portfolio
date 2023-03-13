@@ -1,0 +1,38 @@
+[
+  {
+    "img": "hero-banner.avif",
+    "title": "React MUI Portfolio Template",
+    "deployed": "",
+    "gitHub": "https://github.com/EAmrogowicz/ea-portfolio"
+  },
+  {
+    "img": "https://images.unsplash.com/photo-1509715931393-9609e71c491f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
+    "title": "Bootstrap Portfolio Template",
+    "deployed": "https://eamrogowicz.github.io/bootcamp-m3-portfolioBootstrap/",
+    "gitHub": "https://github.com/EAmrogowicz/bootcamp-m3-portfolioBootstrap"
+  },
+  {
+    "img": "https://images.unsplash.com/photo-1535905748047-14b2415c77d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2900&q=80",
+    "title": "Team Profile Generator",
+    "deployed": "https://github.com/EAmrogowicz/team-profile-generator/blob/main/output/team.html",
+    "gitHub": "https://github.com/EAmrogowicz/team-profile-generator"
+  },
+  {
+    "img": "https://images.unsplash.com/photo-1488812690953-601000f207e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2980&q=80",
+    "title": "Weather Dashboard",
+    "deployed": "https://eamrogowicz.github.io/weather-dashboard/",
+    "gitHub": "https://github.com/EAmrogowicz/weather-dashboard"
+  },
+  {
+    "img": "https://images.unsplash.com/photo-1453574487790-de3ecc4ffc4a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
+    "title": "Work Day Scheduler",
+    "deployed": "https://eamrogowicz.github.io/work-day-scheduler/",
+    "gitHub": "https://github.com/EAmrogowicz/work-day-scheduler"
+  },
+  {
+    "img": "https://images.unsplash.com/photo-1567874790230-3acbb5149829?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
+    "title": "JS Code Quiz",
+    "deployed": "https://eamrogowicz.github.io/code-quiz/",
+    "gitHub": "https://github.com/EAmrogowicz/code-quiz"
+  }
+]

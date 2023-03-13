@@ -4,7 +4,7 @@ import "./box.css";
 
 function BoxContainer(props) {
   return (
-    <Box className="alignment" sx={{ width: "100%", height: "100%" }}>
+    <Box className="alignment" sx={{ display: "flex", flexWrap: "wrap" }}>
       {props.children}
     </Box>
   );

@@ -2,12 +2,12 @@ import * as React from "react";
 import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
 import * as Icon from "react-bootstrap-icons";
-import "./socialMedia.css";
+import "./socialLinks.css";
 
-function SocialMediaLink() {
+function SocialLinks() {
   return (
     <div className="socialLinks">
-      <Stack direction="row" spacing={-2}>
+      <Stack direction="row" spacing={0} className="socialLinksBox">
         <Button
           className="contactLink"
           variant="primary"
@@ -40,4 +40,4 @@ function SocialMediaLink() {
   );
 }
 
-export default SocialMediaLink;
+export default SocialLinks;

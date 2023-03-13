@@ -10,8 +10,9 @@
 .navbar {
   padding: 0.2rem;
   padding-left: 3.2rem;
-  background-color: rgba(51, 76, 83, 1);
+  background-color: #1d252a;
   font-size: 1rem;
+  border-bottom: 1px solid #334c53;
 }
 
 .navbar ul {
