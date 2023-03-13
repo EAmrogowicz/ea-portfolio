@@ -5,17 +5,9 @@ import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Photo from "../components/Photo/photo";
-
-import {
-  createTheme,
-  responsiveFontSizes,
-  ThemeProvider,
-} from "@mui/material/styles";
-
-import Typography from "@mui/material/Typography";
-
-let theme = createTheme();
-theme = responsiveFontSizes(theme);
+import TitleH2 from "../components/Text/titleH2";
+import SubTitle from "../components/Text/subtitle";
+import Paragraph from "../components/Text/paragraph";
 
 function About() {
   return (
@@ -35,20 +27,19 @@ function About() {
             />
           </Box>
           <Box sx={{ display: "flex", flexWrap: "wrap" }}>
-            <ThemeProvider theme={theme}>
-              <Typography variant="h1">About Me</Typography>
-              <Typography variant="h5">
-                Predominantly a landscape painter, Ewelina Amrogowicz is a
-                Polish artist currently living in London.
-              </Typography>
-              <p>
-                Ewelina's focus on the natural world is stimulated by her
-                passion for the environment and an interest in escapism. She
-                dedicates herself to different topics and motives, but remain
-                true to the photorealistic painting style. Currently expand her
-                creative side in Web Development.
-              </p>
-            </ThemeProvider>
+            <TitleH2 text="About Me" />
+            <SubTitle
+              text="Predominantly a landscape painter, Ewelina Amrogowicz is a
+                Polish artist currently living in London."
+            />
+            <Paragraph
+              text="Ewelina's focus on the natural world is stimulated by her passion
+              for the environment and an interest in escapism. She dedicates
+              herself to different topics and motives, but remain true to the
+              photorealistic painting style. Currently expand her creative side
+              in Web Development."
+            />
+
             <Button
               className="btn"
               variant="outlined"

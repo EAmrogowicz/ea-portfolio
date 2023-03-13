@@ -4,6 +4,18 @@
   font-family: "Roboto";
   margin-bottom: 1.6rem;
 }
+.h2 {
+  color: white;
+  font-family: "Roboto";
+}
+
+.h4 {
+  color: #d6dcdd;
+  letter-spacing: 2px;
+  font-family: "Helvetica Neue";
+  text-transform: uppercase;
+  font-weight: 400;
+}
 
 .h5 {
   color: #d6dcdd;
@@ -13,12 +25,14 @@
 }
 
 .h6 {
-  color: red;
+  color: #d6dcdd;
   letter-spacing: 2px;
   font-family: "Roboto";
   text-transform: uppercase;
-  font-weight: 400;
-  margin-bottom: 1rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  margin-top: 3.2rem;
+  border-bottom: 1px solid #334c53;
 }
 
 .p {

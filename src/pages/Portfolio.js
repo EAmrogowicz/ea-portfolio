@@ -8,26 +8,15 @@ import IconButton from "@mui/material/IconButton";
 import Button from "@mui/material/Button";
 import * as Icon from "react-bootstrap-icons";
 import portfolioData from "../components/portfolioData.json";
-
-import {
-  createTheme,
-  responsiveFontSizes,
-  ThemeProvider,
-} from "@mui/material/styles";
-
-import Typography from "@mui/material/Typography";
-
-let theme = createTheme();
-theme = responsiveFontSizes(theme);
+import TitleH2 from "../components/Text/titleH2";
+import SubTitle from "../components/Text/subtitle";
 
 export default function Portfolio() {
   return (
     <Section>
       <Container fixed>
-        <ThemeProvider theme={theme}>
-          <Typography variant="h1">Portfolio</Typography>
-          <Typography variant="h5">Insight into my projects.</Typography>
-        </ThemeProvider>
+        <TitleH2 text="Portfolio" />
+        <SubTitle text="Insight into my projects." />
 
         <ImageList sx={{ width: "100%", height: "100%" }} gap={8}>
           {portfolioData.map((item) => (

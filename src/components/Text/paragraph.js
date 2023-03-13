@@ -13,7 +13,7 @@ theme = responsiveFontSizes(theme);
 function Paragraph(props) {
   return (
     <ThemeProvider theme={theme}>
-      <Typography variant="p" className="p">
+      <Typography variant="subtitle1" className="p">
         {props.text}
       </Typography>
     </ThemeProvider>

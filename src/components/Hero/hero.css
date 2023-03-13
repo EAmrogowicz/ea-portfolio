@@ -17,21 +17,6 @@
   z-index: 2;
 }
 
-.hero h1 {
-  line-height: 3.2rem;
-  color: white;
-  font-family: "Roboto";
-  margin-bottom: 1.6rem;
-}
-
-.hero h4 {
-  color: #d6dcdd;
-  letter-spacing: 2px;
-  font-family: "Helvetica Neue";
-  text-transform: uppercase;
-  font-weight: 400;
-}
-
 .hero .btn {
   margin-top: 3.2rem;
   color: #d6dcdd;
