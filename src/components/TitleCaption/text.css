@@ -1,0 +1,27 @@
+.h1 {
+  line-height: 3.2rem;
+  color: white;
+  font-family: "Roboto";
+  margin-bottom: 1.6rem;
+}
+
+.h5 {
+  color: #d6dcdd;
+  letter-spacing: 2px;
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+}
+
+.h6 {
+  color: red;
+  letter-spacing: 2px;
+  font-family: "Roboto";
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.p {
+  margin-top: 3.2rem;
+  line-height: 1.5;
+}

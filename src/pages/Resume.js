@@ -4,9 +4,11 @@ import Container from "@mui/material/Container";
 import { experimentalStyled as styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Unstable_Grid2";
-import Stack from "@mui/material/Stack";
-import Slider from "@mui/material/Slider";
+import SkillSlider from "../components/Resume/skillSlider";
 import * as Icon from "react-bootstrap-icons";
+import Title from "../components/TitleCaption/title";
+import SubTitle from "../components/TitleCaption/subtitle";
+import Heading from "../components/TitleCaption/subtitle";
 
 import {
   createTheme,
@@ -23,12 +25,8 @@ export default function Resume() {
   return (
     <Section>
       <Container fixed>
-        <ThemeProvider theme={theme}>
-          <Typography variant="h1">Resume</Typography>
-          <Typography variant="h5">
-            My top achievements and experience summary.
-          </Typography>
-        </ThemeProvider>
+        <Title text="Resume" />
+        <SubTitle text="My top achievements and experience summary." />
 
         <Box sx={{ flexGrow: 1, mt: 8 }}>
           <Grid
@@ -38,24 +36,10 @@ export default function Resume() {
           >
             <Grid xs={4}>
               <Box>
-                <ThemeProvider theme={theme}>
-                  <Typography variant="h6">Software Skills</Typography>
-                </ThemeProvider>
-                <Stack
-                  direction={{ xs: "column", sm: "row" }}
-                  sx={{ width: "100%" }}
-                  spacing={{ xs: 1, sm: 2, md: 4 }}
-                  justifyContent="flex-start"
-                  alignItems="center"
-                >
+                <Heading text="Software Skills " />
+                <SkillSlider name="Photoshop" level={85}>
                   <Icon.FileEarmarkImage className="icon" />
-                  <p className="desc">Photoshop</p>
-                  <Slider
-                    defaultValue={50}
-                    aria-label="Default"
-                    valueLabelDisplay="auto"
-                  />
-                </Stack>
+                </SkillSlider>
               </Box>
             </Grid>
 

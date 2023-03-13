@@ -10,14 +10,14 @@ import "./text.css";
 let theme = createTheme();
 theme = responsiveFontSizes(theme);
 
-function SubTitle(props) {
+function Heading(props) {
   return (
     <ThemeProvider theme={theme}>
-      <Typography variant="h5" className="h5">
+      <Typography variant="h6" className="h6">
         {props.text}
       </Typography>
     </ThemeProvider>
   );
 }
 
-export default SubTitle;
+export default Heading;
