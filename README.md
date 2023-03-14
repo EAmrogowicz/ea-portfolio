@@ -19,16 +19,16 @@ highlights my strongest work as well as the thought processes behind it.
 
 Technologies that have been used:
 
-- React
-- Navigation with `React Router`, dynamic rendering, or another third part
+- React.
+- Navigation with `React Router`.
 - Material UI is an open-source React component library that implements Google's
   Material Design.
 
 ## Usage
 
-Output: https://drive.google.com/file/d/15t1H2Wd6E6oVATdp0DHxpzydhdcU2CCY/view
+Output: https://eamrogowicz.github.io/ea-portfolio
 
-GitHub source files: https://github.com/EAmrogowicz/ea-porftfolio
+GitHub source files: https://github.com/EAmrogowicz/ea-portfolio
 
 ## Requirements
 
