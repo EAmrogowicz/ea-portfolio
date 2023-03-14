@@ -11,7 +11,7 @@ import "./text.css";
 let theme = createTheme();
 theme = responsiveFontSizes(theme);
 
-function Title(props) {
+export default function Title(props) {
   return (
     <ThemeProvider theme={theme}>
       <Typography variant="h1" className="h1">
@@ -20,5 +20,3 @@ function Title(props) {
     </ThemeProvider>
   );
 }
-
-export default Title;

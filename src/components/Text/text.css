@@ -1,8 +1,8 @@
 .h1 {
   line-height: 3.2rem;
   color: white;
-  font-family: "Roboto";
   margin-bottom: 1.6rem;
+  font-family: "Roboto";
 }
 .h2 {
   color: white;
@@ -30,7 +30,7 @@
   font-family: "Roboto";
   text-transform: uppercase;
   font-weight: 700;
-  margin-bottom: 2rem;
+  margin-bottom: 1.6rem;
   margin-top: 3.2rem;
   border-bottom: 1px solid #334c53;
 }
