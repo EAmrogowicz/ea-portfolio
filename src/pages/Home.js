@@ -18,18 +18,17 @@ function Home() {
             <CustomButton
               name="Email Me"
               link="mailto:contact@ewelina.studio"
-              class="btnLight"
-              target="_self"
+              class="btnLightM"
             />
           </div>
-          <div>
+          {/* <div>
             <CustomButton
               name="Portfolio"
               link="https://eamrogowicz.github.io/ea-portfolio/Portfolio"
               class="btnLight"
               target="_self"
             />
-          </div>
+          </div> */}
         </Stack>
         <SocialLinks />
       </Hero>
