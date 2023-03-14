@@ -5,6 +5,7 @@ import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Photo from "../components/Photo/photo";
+
 import TitleH2 from "../components/Text/titleH2";
 import SubTitle from "../components/Text/subtitle";
 import Paragraph from "../components/Text/paragraph";

@@ -1,3 +1,4 @@
+import React from "react";
 import Section from "../components/Section/section";
 import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
@@ -7,6 +8,7 @@ import TitleH2 from "../components/Text/titleH2";
 import SubTitle from "../components/Text/subtitle";
 import Heading from "../components/Text/heading";
 
+import ProfilePic from "../components/ResumeOverview/resumeOverview";
 import SoftwareSkills from "../components/ResumeSoftwareSkills/softwareSkills";
 import Language from "../components/ResumeLanguage/language";
 import Experience from "../components/ResumeExperience/experience";
@@ -21,11 +23,11 @@ export default function Resume() {
         <Box sx={{ flexGrow: 1, mt: 2 }}>
           <Grid
             container
-            spacing={{ xs: 6, md: 12 }}
+            spacing={{ xs: 4, md: 8 }}
             columns={{ xs: 2, sm: 2, md: 4, lg: 12 }}
           >
             <Grid xs={4}>
-              <SoftwareSkills />
+              <ProfilePic />
             </Grid>
 
             <Grid xs={8}>
@@ -33,8 +35,9 @@ export default function Resume() {
             </Grid>
 
             <Grid xs={4}>
+              <SoftwareSkills />
               <Box>
-                <Heading text="Design & Personal Skills" />
+                <Heading text="Skills" />
               </Box>
             </Grid>
 

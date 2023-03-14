@@ -30,12 +30,17 @@
   font-family: "Roboto";
   text-transform: uppercase;
   font-weight: 700;
-  margin-bottom: 1.6rem;
-  margin-top: 3.2rem;
-  border-bottom: 1px solid #334c53;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  border-bottom: 4px solid #d6dcdd;
 }
 
 .p {
   margin-top: 3.2rem;
   line-height: 1.5;
+}
+
+.quote {
+  font-family: "Roboto";
+  text-align: center;
 }

@@ -1,0 +1,35 @@
+:root {
+  --platinum: #d6dcdd;
+  --charcoal: #334c53;
+  --harvest-gold: #ce9334;
+  --gunmetal: #1d252a;
+}
+
+.cardStyles {
+  color: white;
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+  padding-left: 0;
+}
+
+.cardContent {
+  padding-left: 0;
+  border-bottom: 1px solid #334c53;
+}
+
+.cardDate,
+.cardDesc {
+  font-family: "Helvetica Neue";
+  color: var(--platinum);
+}
+
+.cardTitle,
+.cardCompany {
+  font-family: "Roboto";
+  color: var(--harvest-gold);
+}
+
+.cardDesc {
+  font-size: 1rem;
+}
