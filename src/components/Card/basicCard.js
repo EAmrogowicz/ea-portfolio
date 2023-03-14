@@ -3,14 +3,12 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 
-import "./style.css";
+import "./card.css";
 
-import experienceData from "./experienceData.json";
-
-export default function BasicCard() {
+export default function BasicCard(props) {
   return (
     <Card sx={{ width: "100%" }} className="cardStyles">
-      {experienceData.map((item) => (
+      {props.data.map((item) => (
         <CardContent className="cardContent">
           <Typography sx={{ fontSize: 14 }} gutterBottom className="cardDate">
             {item.date}

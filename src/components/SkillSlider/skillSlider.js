@@ -2,7 +2,7 @@ import React from "react";
 import Stack from "@mui/material/Stack";
 import Slider from "@mui/material/Slider";
 
-import "./style.css";
+import "./slider.css";
 
 export default function SkillSlider(props) {
   return (

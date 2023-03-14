@@ -12,6 +12,7 @@ import ProfilePic from "../components/ResumeOverview/resumeOverview";
 import SoftwareSkills from "../components/ResumeSoftwareSkills/softwareSkills";
 import Language from "../components/ResumeLanguage/language";
 import Experience from "../components/ResumeExperience/experience";
+import Education from "../components/ResumeEducation/education";
 
 export default function Resume() {
   return (
@@ -36,15 +37,10 @@ export default function Resume() {
 
             <Grid xs={4}>
               <SoftwareSkills />
-              <Box>
-                <Heading text="Skills" />
-              </Box>
             </Grid>
 
             <Grid xs={8}>
-              <Box>
-                <Heading text="Education" />
-              </Box>
+              <Education />
             </Grid>
 
             <Grid xs={4}>

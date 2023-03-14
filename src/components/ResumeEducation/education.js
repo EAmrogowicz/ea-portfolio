@@ -3,13 +3,13 @@ import Box from "@mui/material/Box";
 import Heading from "../Text/heading";
 
 import Card from "../Card/basicCard";
-import experienceData from "./experienceData.json";
+import educationData from "./educationData.json";
 
-export default function Experience() {
+export default function Education() {
   return (
     <Box sx={{ width: "100%" }}>
-      <Heading text="Experience" />
-      <Card data={experienceData} />
+      <Heading text="Education" />
+      <Card data={educationData} />
     </Box>
   );
 }

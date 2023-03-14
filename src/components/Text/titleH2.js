@@ -6,7 +6,7 @@ import {
 } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
 
-import "./text.css";
+import "./textStyles.css";
 
 let theme = createTheme();
 theme = responsiveFontSizes(theme);

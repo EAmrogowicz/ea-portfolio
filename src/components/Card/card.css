@@ -1,10 +1,3 @@
-:root {
-  --platinum: #d6dcdd;
-  --charcoal: #334c53;
-  --harvest-gold: #ce9334;
-  --gunmetal: #1d252a;
-}
-
 .cardStyles {
   color: white;
   background-color: transparent;
@@ -24,10 +17,14 @@
   color: var(--platinum);
 }
 
-.cardTitle,
-.cardCompany {
+.cardTitle {
   font-family: "Roboto";
-  color: var(--harvest-gold);
+  color: #ce9334;
+}
+
+.cardTitleOpt,
+.cardCompanyOpt {
+  color: white;
 }
 
 .cardDesc {

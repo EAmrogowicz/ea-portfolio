@@ -44,3 +44,10 @@
   font-family: "Roboto";
   text-align: center;
 }
+
+.caption {
+  line-height: 1.2;
+  font-size: 1rem;
+  color: #1d252a;
+  text-align: center;
+}

@@ -1,7 +1,7 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 import Heading from "../Text/heading";
-import SkillSlider from "../ResumeSoftwareSkills/skillSlider";
+import SkillSlider from "../SkillSlider/skillSlider";
 import * as Icon from "react-bootstrap-icons";
 
 export default function Language() {
