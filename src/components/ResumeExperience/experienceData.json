@@ -1,14 +1,20 @@
 [
   {
-    "label": "Select campaign settings",
-    "description": "For each ad campaign that you create, you can control how much you're willing to spend on clicks and conversions, which networks and geographical locations you want your ads to show on, and more."
+    "date": "2021 - now",
+    "title": "Designer and Artist",
+    "company": "Ewelina Studio",
+    "description": "Create a variety of fine art realistic pieces including paintings and sketches. Handle multiple art projects focusing on requirements from start to finish. Working with customer to meet all their wishes and build a cohesive custom piece/design."
   },
   {
-    "label": "Create an ad group",
-    "description": "An ad group contains one or more ads which target a shared set of keywords."
+    "date": "Feb 2022 - now",
+    "title": "Art Instructor",
+    "company": "MasterPeace, London, UK",
+    "description": "Teach painting for individuals and groups, and help them discover their creativity – at the studio, online or at company offices. Coordinate one-to-one sessions with students and design individual learning plans."
   },
   {
-    "label": "Create an ad",
-    "description": "Try out different ad text to see what brings in the most customers, and learn how to enhance your ads using features like ad extensions. If you run into any problems with your ads, find out how to tell if they're running and how to resolve approval issues."
+    "date": "May 2015 - Oct 2021",
+    "title": "Architect",
+    "company": "Gensler, London, UK",
+    "description": "Prepare and present feasibility reports and design proposals to the client. Consult with other professionals about design as well as discuss the ideas, objectives, requirements and budget of a project. Produce detailed workings, drawings and specifications. Assess the needs of the building and its users, advising the client on the practicality of their project. Use IT in design and project management, specifically using computer-aided design software. Keep within financial budgets and deadlines. Negotiate with contractors and other professionals. Project manage and help to coordinate the work of contractors. Control a project from start to finish. Carry out regular site visits to check on progress and ensure that the project is running on time and to budget. Resolve problems and issues that arise during construction. Ensure that the environmental impact of the project is managed."
   }
 ]
