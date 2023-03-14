@@ -1,0 +1,31 @@
+.cardBox {
+  background-color: rgba(51, 76, 83, 0.75);
+  border-radius: 16px;
+}
+
+.cardContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  margin: 0;
+}
+
+.field {
+  /* border: 1px solid #d6dcdd;
+  border-radius: 4px; */
+}
+
+.btnSend {
+  padding: 0 2.4rem;
+  color: white;
+  border-radius: 32px;
+  border: 1px solid white;
+  text-transform: uppercase;
+  margin: 1.6rem 0;
+}
+
+.btnSend:hover {
+  color: #ce9334;
+  border: 1px solid #ce9334;
+}

@@ -6,13 +6,13 @@ import Grid from "@mui/material/Unstable_Grid2";
 
 import TitleH2 from "../components/Text/titleH2";
 import SubTitle from "../components/Text/subtitle";
-import Heading from "../components/Text/heading";
 
 import ProfilePic from "../components/ResumeOverview/resumeOverview";
 import SoftwareSkills from "../components/ResumeSoftwareSkills/softwareSkills";
 import Language from "../components/ResumeLanguage/language";
 import Experience from "../components/ResumeExperience/experience";
 import Education from "../components/ResumeEducation/education";
+import HobbyList from "../components/ResumeHobby/hobby";
 
 export default function Resume() {
   return (
@@ -48,7 +48,7 @@ export default function Resume() {
             </Grid>
 
             <Grid xs={8}>
-              <Heading text="Hobby & Interest" />
+              <HobbyList />
             </Grid>
           </Grid>
         </Box>

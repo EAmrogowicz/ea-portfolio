@@ -24,7 +24,16 @@ body {
   border: 1px solid #d6dcdd;
 }
 
-.section .btn:hover {
+.section .btnDark {
+  padding: 0 2.4rem;
+  margin-top: 1rem;
+  color: #1d252a;
+  border-radius: 32px;
+  border: 1px solid #1d252a;
+}
+
+.section .btn:hover,
+.section .btnDark:hover {
   color: #ce9334;
   border: 1px solid #ce9334;
 }

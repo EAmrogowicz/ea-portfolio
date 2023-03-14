@@ -3,8 +3,8 @@ import Box from "@mui/material/Box";
 import Photo from "../Photo/photo";
 import Quote from "../Text/quote";
 import Divider from "@mui/material/Divider";
-import Typography from "@mui/material/Typography";
 import Caption from "../Text/caption";
+import Button from "@mui/material/Button";
 
 import BasicList from "../List/list";
 import listData from "../List/listData.json";
@@ -26,6 +26,14 @@ export default function ProfilePic() {
       <Caption text="PERSONAL SKILLS" />
       <BasicList data={listData} />
       <br />
+      <Button
+        className="btnDark"
+        variant="outlined"
+        target="_blank"
+        href="https://www.canva.com/design/DAFbUzaKong/i-Ic--PXF2yApyzRGpZgPA/view?utm_content=DAFbUzaKong&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+      >
+        Download CV
+      </Button>
     </Box>
   );
 }

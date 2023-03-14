@@ -1,0 +1,15 @@
+.hobbyBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 160px;
+}
+
+.hobbyIcons {
+  font-size: 4.8rem;
+  padding: 1rem;
+  border: 1px solid white;
+  border-radius: 50%;
+}
