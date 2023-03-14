@@ -1,0 +1,22 @@
+.container {
+  margin-top: 1.6rem;
+  /* background-color: rgba(51, 76, 83, 0.75); */
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 16px;
+  padding-bottom: 1.6rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form.search {
+  overflow: auto;
+  margin-bottom: 10px;
+}
+
+form.search button[type="submit"] {
+  float: right;
+  margin-top: 10px;
+}

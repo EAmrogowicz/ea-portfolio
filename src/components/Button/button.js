@@ -5,12 +5,7 @@ import "./button.css";
 
 export default function CustomButton(props) {
   return (
-    <Button
-      className={props.class}
-      variant="outlined"
-      target="_blank"
-      href={props.link}
-    >
+    <Button className={props.class} target={props.target} href={props.link}>
       {props.name}
     </Button>
   );

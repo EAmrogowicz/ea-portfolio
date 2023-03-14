@@ -44,6 +44,7 @@ function About() {
               name="Download CV"
               link="https://www.canva.com/design/DAFbUzaKong/i-Ic--PXF2yApyzRGpZgPA/view?utm_content=DAFbUzaKong&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
               class="btnLight"
+              target="_blank"
             />
           </Box>
         </Stack>

@@ -15,10 +15,20 @@ function Home() {
 
         <Stack direction="row" spacing={{ xs: 1, sm: 2, md: 4 }}>
           <div>
-            <CustomButton name="Contact" link="#" class="btnLight" />
+            <CustomButton
+              name="Contact"
+              link="/Contact"
+              class="btnLight"
+              target="_self"
+            />
           </div>
           <div>
-            <CustomButton name="Portfolio" link="#" class="btnLight" />
+            <CustomButton
+              name="Portfolio"
+              link="/Portfolio"
+              class="btnLight"
+              target="_self"
+            />
           </div>
         </Stack>
         <SocialLinks />
