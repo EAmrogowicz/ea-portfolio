@@ -16,8 +16,8 @@ function Home() {
         <Stack direction="row" spacing={{ xs: 1, sm: 2, md: 4 }}>
           <div>
             <CustomButton
-              name="Contact"
-              link="/Contact"
+              name="Email Me"
+              link="mailto:contact@ewelina.studio"
               class="btnLight"
               target="_self"
             />

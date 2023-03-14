@@ -16,12 +16,16 @@ export default function BasicTextFields(props) {
       <TextField
         id="filled-multiline-flexible"
         label="Your Name"
+        name="name"
+        onChange={props.handleInputChange}
         multiline
         variant="filled"
       />
       <TextField
         id="filled-textarea"
         label="Your Email"
+        name="email"
+        onChange={props.handleInputChange}
         multiline
         variant="filled"
       />
@@ -29,10 +33,19 @@ export default function BasicTextFields(props) {
         fullWidth
         label="Your Message"
         id="fullWidth"
+        name="message"
+        onChange={props.handleInputChange}
         rows={4}
         variant="filled"
         placeholder="Type Here"
       />
+      <button
+        type="submit"
+        onClick={props.handleFormSubmit}
+        className="btnSubmit"
+      >
+        Submit
+      </button>
     </Box>
   );
 }

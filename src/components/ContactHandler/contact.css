@@ -20,3 +20,19 @@ form.search button[type="submit"] {
   float: right;
   margin-top: 10px;
 }
+
+.btnSubmit {
+  font-size: 1rem;
+  text-transform: uppercase;
+
+  padding: 0.4rem 2.4rem;
+  margin-top: 1rem;
+  border-radius: 32px;
+  color: #1d252a;
+  border: 1px solid #1d252a;
+}
+
+.btnSubmit:hover {
+  color: #ce9334;
+  border: 1px solid #ce9334;
+}
