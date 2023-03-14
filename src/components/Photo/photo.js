@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css";
+import "./photo.css";
 
 function Photo(props) {
   // Import result is the URL of your image

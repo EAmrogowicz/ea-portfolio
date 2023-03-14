@@ -3,9 +3,8 @@ import Section from "../components/Section/section";
 import Container from "@mui/material/Container";
 import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
 import Photo from "../components/Photo/photo";
-
+import CustomButton from "../components/Button/button";
 import TitleH2 from "../components/Text/titleH2";
 import SubTitle from "../components/Text/subtitle";
 import Paragraph from "../components/Text/paragraph";
@@ -41,14 +40,11 @@ function About() {
               in Web Development."
             />
 
-            <Button
-              className="btn"
-              variant="outlined"
-              target="_blank"
-              href="https://www.canva.com/design/DAFbUzaKong/i-Ic--PXF2yApyzRGpZgPA/view?utm_content=DAFbUzaKong&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
-            >
-              Download CV
-            </Button>
+            <CustomButton
+              name="Download CV"
+              link="https://www.canva.com/design/DAFbUzaKong/i-Ic--PXF2yApyzRGpZgPA/view?utm_content=DAFbUzaKong&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+              class="btnLight"
+            />
           </Box>
         </Stack>
       </Container>
