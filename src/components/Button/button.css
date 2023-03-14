@@ -6,7 +6,8 @@
   border-radius: 32px;
 }
 
-.btnLight {
+.btnLight,
+.btnLightM {
   color: #d6dcdd;
   border: 1px solid #d6dcdd;
 }
