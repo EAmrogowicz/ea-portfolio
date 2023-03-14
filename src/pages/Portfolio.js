@@ -22,8 +22,8 @@ export default function Portfolio() {
           {portfolioData.map((item) => (
             <ImageListItem key={item.img}>
               <img
-                src={process.env.PUBLIC_URL + `${item.img}`}
-                srcSet={`${item.img}`}
+                src={item.img}
+                srcSet={item.img}
                 alt={item.title}
                 loading="lazy"
               />

@@ -9,7 +9,7 @@ import CustomButton from "../components/Button/button";
 function Home() {
   return (
     <div>
-      <Hero backgroundImage="../public/hero-banner.avif">
+      <Hero>
         <Title text="Ewelina Amrogowicz" />
         <TitleCaption text="UX / UI Developer" />
 

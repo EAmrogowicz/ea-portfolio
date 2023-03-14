@@ -12,7 +12,7 @@ export default function ProfilePic() {
   return (
     <Box sx={{ mt: 4, backgroundColor: "#334c53", p: 2 }}>
       <Photo
-        photo={process.env.PUBLIC_URL + "profilePic.jpg"}
+        photo={process.env.PUBLIC_URL + "/profilePic.jpg"}
         alt="Ewelina in her home studio painting"
       />
       <br />

@@ -22,7 +22,7 @@ function About() {
         >
           <Box sx={{ display: "flex", flexWrap: "wrap" }}>
             <Photo
-              photo={process.env.PUBLIC_URL + "ewelinastudio-painting.jpg"}
+              photo={process.env.PUBLIC_URL + "/ewelinastudio-painting.jpg"}
               alt="Ewelina in her home studio painting"
             />
           </Box>

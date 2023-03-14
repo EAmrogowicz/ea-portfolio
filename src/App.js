@@ -13,7 +13,7 @@ import { StyledEngineProvider } from "@mui/material/styles";
 function App() {
   return (
     <StyledEngineProvider injectFirst>
-      <Router>
+      <Router basename="/ea-portfolio">
         <div>
           <Wrapper>
             <Navbar />
