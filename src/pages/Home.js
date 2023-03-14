@@ -25,7 +25,7 @@ function Home() {
           <div>
             <CustomButton
               name="Portfolio"
-              link="/Portfolio"
+              link="https://eamrogowicz.github.io/ea-portfolio/Portfolio"
               class="btnLight"
               target="_self"
             />
