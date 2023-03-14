@@ -3,10 +3,8 @@ import Section from "../components/Section/section";
 import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Unstable_Grid2";
-
 import TitleH2 from "../components/Text/titleH2";
 import SubTitle from "../components/Text/subtitle";
-
 import ProfilePic from "../components/ResumeOverview/resumeOverview";
 import SoftwareSkills from "../components/ResumeSoftwareSkills/softwareSkills";
 import Language from "../components/ResumeLanguage/language";

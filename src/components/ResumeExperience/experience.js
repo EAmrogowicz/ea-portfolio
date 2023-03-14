@@ -1,7 +1,6 @@
-import * as React from "react";
+import React from "react";
 import Box from "@mui/material/Box";
 import Heading from "../Text/heading";
-
 import Card from "../Card/basicCard";
 import experienceData from "./experienceData.json";
 
