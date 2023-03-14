@@ -2,11 +2,3 @@
   background-color: rgba(51, 76, 83, 0.75);
   border-radius: 16px;
 }
-
-.cardContent {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  margin: 0;
-}

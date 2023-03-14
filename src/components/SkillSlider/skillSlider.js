@@ -1,29 +1,27 @@
 import React from "react";
 import Stack from "@mui/material/Stack";
 import Slider from "@mui/material/Slider";
-import { StyledEngineProvider } from "@mui/material/styles";
+
 import "./slider.css";
 
 export default function SkillSlider(props) {
   return (
-    <StyledEngineProvider injectFirst>
-      <Stack
-        direction={{ xs: "column", sm: "row" }}
-        sx={{ width: "100%", mt: 1 }}
-        spacing={{ xs: 1, sm: 2, md: 4 }}
-        justifyContent="flex-start"
-        alignItems="center"
-      >
-        {props.children}
-        <p className="desc">{props.name}</p>
-        <Slider
-          size="small"
-          defaultValue={props.level}
-          aria-label="Default"
-          valueLabelDisplay="auto"
-          className="slider"
-        />
-      </Stack>
-    </StyledEngineProvider>
+    <Stack
+      direction={{ xs: "column", sm: "row" }}
+      sx={{ width: "100%", mt: 1 }}
+      spacing={{ xs: 1, sm: 2, md: 4 }}
+      justifyContent="flex-start"
+      alignItems="center"
+    >
+      {props.children}
+      <p className="desc">{props.name}</p>
+      <Slider
+        size="small"
+        defaultValue={props.level}
+        aria-label="Default"
+        valueLabelDisplay="auto"
+        className="slider"
+      />
+    </Stack>
   );
 }

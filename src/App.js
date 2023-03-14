@@ -8,24 +8,27 @@ import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
 import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
+import { StyledEngineProvider } from "@mui/material/styles";
 
 function App() {
   return (
-    <Router>
-      <div>
-        <Wrapper>
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/resume" element={<Resume />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-          <Footer />
-        </Wrapper>
-      </div>
-    </Router>
+    <StyledEngineProvider injectFirst>
+      <Router>
+        <div>
+          <Wrapper>
+            <Navbar />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="/resume" element={<Resume />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+            <Footer />
+          </Wrapper>
+        </div>
+      </Router>
+    </StyledEngineProvider>
   );
 }
 
