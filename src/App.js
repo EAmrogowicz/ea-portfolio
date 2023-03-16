@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from "./components/Navbar/navbar";
+import ResponsiveAppBar from "./components/Navbar/navbar";
 import Footer from "./components/Footer/footer";
 import Wrapper from "./components/Wrapper/wrapper";
 import Home from "./pages/Home";
@@ -16,7 +16,7 @@ function App() {
       <Router basename="/ea-portfolio">
         <div>
           <Wrapper>
-            <Navbar />
+            <ResponsiveAppBar />
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
