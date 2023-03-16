@@ -21,14 +21,14 @@ function Home() {
               class="btnLightM"
             />
           </div>
-          <div>
+          {/* <div>
             <CustomButton
               name="Portfolio"
               link="/ea-portfolio/Portfolio"
               class="btnLightM"
               target="_self"
             />
-          </div>
+          </div> */}
         </Stack>
         <SocialLinks />
       </Hero>
