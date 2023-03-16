@@ -85,9 +85,9 @@ function ResponsiveAppBar() {
             variant="h5"
             noWrap
             component="a"
-            href=""
+            href="/ea-portfolio"
             sx={{
-              mr: 2,
+              mr: 8,
               display: { xs: "flex", md: "none" },
               flexGrow: 1,
               fontFamily: "Roboto",

@@ -14,6 +14,7 @@ export default function ProfilePic() {
       <Photo
         photo={process.env.PUBLIC_URL + "/profilePic.jpg"}
         alt="Ewelina in her home studio painting"
+        look="imgSm"
       />
       <br />
       <Quote text="A dynamic and highly motivated designer with more than 6 years of experience in producing art and design collections looking forward to enhancing career! " />

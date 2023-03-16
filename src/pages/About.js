@@ -12,15 +12,12 @@ import Grid from "@mui/material/Unstable_Grid2";
 
 function About() {
   return (
-    <Grid
-      container
-      spacing={{ xs: 4, md: 8 }}
-      columns={{ xs: 2, sm: 4, md: 8, lg: 12 }}
-    >
+    <Grid container spacing={{ xs: 4, md: 8 }} columns={{ xs: 4, md: 12 }}>
       <Grid xs={4}>
         <Photo
           photo={process.env.PUBLIC_URL + "/ewelinastudio-painting.jpg"}
           alt="Ewelina in her home studio painting"
+          look="imgLg"
         />
       </Grid>
       <Grid xs={8}>
@@ -33,12 +30,6 @@ function About() {
               justifyContent="center"
               alignItems="center"
             >
-              {/* <Box sx={{ display: "flex", flexWrap: "wrap" }}>
-            <Photo
-              photo={process.env.PUBLIC_URL + "/ewelinastudio-painting.jpg"}
-              alt="Ewelina in her home studio painting"
-            />
-          </Box> */}
               <Box sx={{ display: "flex", flexWrap: "wrap" }}>
                 <TitleH2 text="About Me" />
                 <SubTitle

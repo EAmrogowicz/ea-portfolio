@@ -1,8 +1,17 @@
-.img {
+.imgLg {
+  overflow: hidden;
+  z-index: 1;
+  height: calc(100vh - 60px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 12px 0 var(--tint);
+}
+
+.imgSm {
   width: 100%;
   height: 100%;
   display: block;
-  /* border-radius: 16px; */
 
   background-size: cover;
   background-repeat: no-repeat;
