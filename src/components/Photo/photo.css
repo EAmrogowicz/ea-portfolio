@@ -1,11 +1,11 @@
 .imgLg {
   overflow: hidden;
   z-index: 1;
-  height: calc(100vh - 60px);
-  display: flex;
+  max-height: 100vh;
+  object-fit: cover;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
-  box-shadow: 0 4px 12px 0 var(--tint);
+  align-items: center; */
 }
 
 .imgSm {
