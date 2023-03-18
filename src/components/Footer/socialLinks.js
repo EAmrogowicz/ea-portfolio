@@ -5,9 +5,9 @@ import * as Icon from "react-bootstrap-icons";
 
 import "./socialLinks.css";
 
-function SocialLinks() {
+function SocialLinks(props) {
   return (
-    <div className="socialLinks">
+    <div className={props.style}>
       <Stack direction="row" spacing={0} className="socialLinksBox">
         <Button
           className="contactLink"

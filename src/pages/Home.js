@@ -9,7 +9,7 @@ import CustomButton from "../components/Button/button";
 function Home() {
   return (
     <div>
-      <Hero>
+      <Hero style="hero">
         <Title text="Ewelina Amrogowicz" />
         <TitleCaption text="UX / UI Developer" />
 
@@ -30,7 +30,7 @@ function Home() {
             />
           </div> */}
         </Stack>
-        <SocialLinks />
+        <SocialLinks style="socialLinksFixed" />
       </Hero>
     </div>
   );
