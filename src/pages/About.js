@@ -1,7 +1,6 @@
 import React from "react";
 import Section from "../components/Section/section";
 import Container from "@mui/material/Container";
-import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
 import Photo from "../components/Photo/photo";
 import CustomButton from "../components/Button/button";
@@ -13,17 +12,25 @@ import Grid from "@mui/material/Unstable_Grid2";
 function About() {
   return (
     <Grid container spacing={{ xs: 4, md: 8 }} columns={{ xs: 4, md: 12 }}>
-      <Grid xs={6}>
+      <Grid xs={4}>
         <Photo
           photo={process.env.PUBLIC_URL + "/ewelinastudio-painting.jpg"}
           alt="Ewelina in her home studio painting"
           look="imgLg"
         />
       </Grid>
-      <Grid xs={6}>
+      <Grid xs={8}>
         <Section>
           <Container fixed>
-            <Box sx={{ display: "flex", flexWrap: "wrap" }}>
+            <Box
+              sx={{
+                display: "flex",
+                flexWrap: "wrap",
+                backgroundColor: "#1d252a",
+                py: 4,
+                px: 8,
+              }}
+            >
               <TitleH2 text="About Me" />
               <SubTitle
                 text="Predominantly a landscape painter, Ewelina Amrogowicz is a

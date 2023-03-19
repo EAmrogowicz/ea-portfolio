@@ -2,7 +2,6 @@ import React, { useState } from "react";
 // Here we import a helper function that will check if the email is valid
 import { validateEmail } from "./validate";
 import TextField from "@mui/material/TextField";
-import ResponsiveDialog from "../Modal/modal";
 
 import "./contact.css";
 
@@ -34,7 +33,7 @@ function Form() {
 
     // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
     if (!validateEmail(email)) {
-      setErrorMessage("Email is invalid");
+      setErrorMessage("Email is invalid!");
       // We want to exit out of this code block if something is wrong so that the user can correct it
       return;
     } else {
@@ -43,10 +42,7 @@ function Form() {
 
     // Alert the user their first and last name, clear the inputs
     alert(`${firstName}, many thanks for your message`);
-    // <ResponsiveDialog
-    //   open={open}
-    //   alertMessage="Many thanks for your message"
-    // />;
+
     setFirstName("");
     setEmail("");
     setMessage("");
@@ -82,8 +78,8 @@ function Form() {
           name="email"
           //
           required
-          //error={validateEmail}
-          // helperText={validateEmail ? "Email is not correct" : ""}
+          // error={validateEmail ? true : false}
+          // helperText={"Email is not correct"}
           //
           onChange={handleInputChange}
           type="text"

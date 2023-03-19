@@ -35,3 +35,12 @@
   border: 1px solid #ce9334;
   background-color: #ce9334;
 }
+
+.error-text {
+  color: white;
+  font-weight: 700;
+  background-color: red;
+  padding: 0.4rem;
+  width: 12.6rem;
+  margin: 0 auto;
+}
