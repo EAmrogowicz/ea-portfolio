@@ -16,13 +16,7 @@ export default function BasicList(props) {
         sx={{ flexWrap: "wrap", gap: 1 }}
       >
         {props.data.map((item) => (
-          <Typography
-            sx={{ fontSize: 14, color: "#1d252a" }}
-            gutterBottom
-            className="listText"
-          >
-            {item.item}
-          </Typography>
+          <Typography className="listText">{item.item}</Typography>
         ))}
       </Stack>
     </Box>
