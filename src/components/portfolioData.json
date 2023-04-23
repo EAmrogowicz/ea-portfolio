@@ -1,5 +1,11 @@
 [
   {
+    "img": "nichi.png",
+    "title": "React MUI Nichi App",
+    "deployed": "https://nichi-energiseyourmind.netlify.app/",
+    "gitHub": "https://github.com/EAmrogowicz/nichi-energiseYourMind-react"
+  },
+  {
     "img": "https://images.unsplash.com/photo-1609875133820-c680be09df88?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2944&q=80",
     "title": "React MUI Portfolio Template",
     "deployed": "",
@@ -28,11 +34,5 @@
     "title": "Work Day Scheduler",
     "deployed": "https://eamrogowicz.github.io/work-day-scheduler/",
     "gitHub": "https://github.com/EAmrogowicz/work-day-scheduler"
-  },
-  {
-    "img": "https://images.unsplash.com/photo-1567874790230-3acbb5149829?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
-    "title": "JS Code Quiz",
-    "deployed": "https://eamrogowicz.github.io/code-quiz/",
-    "gitHub": "https://github.com/EAmrogowicz/code-quiz"
   }
 ]

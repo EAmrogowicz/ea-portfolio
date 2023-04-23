@@ -7,7 +7,6 @@ import Caption from "../Text/caption";
 import CustomButton from "../Button/button";
 import BasicList from "../List/list";
 import listData from "../List/listData.json";
-import { color } from "@mui/system";
 
 export default function ProfilePic() {
   return (

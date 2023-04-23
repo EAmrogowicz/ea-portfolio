@@ -8,10 +8,10 @@ export default function SoftwareSkills() {
   return (
     <Box>
       <Heading text="Software Skills " />
-      <SkillSlider name="Photoshop" level={85}>
+      <SkillSlider name="Photoshop" level={90}>
         <Icon.FileEarmarkImage className="icon" />
       </SkillSlider>
-      <SkillSlider name="Figma" level={60}>
+      <SkillSlider name="Figma" level={55}>
         <Icon.Easel className="icon" />
       </SkillSlider>
       <SkillSlider name="Html" level={85}>
@@ -20,10 +20,10 @@ export default function SoftwareSkills() {
       <SkillSlider name="CSS" level={90}>
         <Icon.FiletypeCss className="icon" />
       </SkillSlider>
-      <SkillSlider name="JavaScript" level={50}>
+      <SkillSlider name="JavaScript" level={60}>
         <Icon.FiletypeJs className="icon" />
       </SkillSlider>
-      <SkillSlider name="React" level={65}>
+      <SkillSlider name="React" level={60}>
         <Icon.FiletypeJsx className="icon" />
       </SkillSlider>
     </Box>
