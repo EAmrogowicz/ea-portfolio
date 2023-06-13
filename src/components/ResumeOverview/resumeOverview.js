@@ -17,7 +17,10 @@ export default function ProfilePic() {
         look="imgSm"
       />
       <br />
-      <Quote text="A dynamic and highly motivated designer with more than 6 years of experience in producing art and design collections looking forward to enhancing career! " />
+      <Quote
+        text="A dynamic and highly motivated designer with more than 6 years of experience as a team and project leader with exceptional understanding of art and design. 
+        Looking forward to start career in UX/UI Design. "
+      />
       <br />
       <br />
       <br />

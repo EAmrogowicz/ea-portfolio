@@ -1,6 +1,5 @@
 import React from "react";
 import Hero from "../components/Hero/hero";
-import Section from "../components/Section/section";
 import Container from "@mui/material/Container";
 import TitleCaption from "../components/Text/titleCaption";
 import SocialLinks from "../components/Footer/socialLinks";
