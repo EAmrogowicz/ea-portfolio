@@ -10,7 +10,7 @@
 .socialLinks {
   width: 100%;
   /* background-color: rgba(51, 76, 83, 0.3); */
-  padding: 0.4rem;
+  padding: 1.6rem 0.4rem 0.4rem 0.4rem;
   z-index: 2;
 }
 

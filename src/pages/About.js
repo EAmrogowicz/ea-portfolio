@@ -11,7 +11,7 @@ import Grid from "@mui/material/Unstable_Grid2";
 
 function About() {
   return (
-    <Grid container spacing={{ xs: 4, md: 8 }} columns={{ xs: 4, md: 12 }}>
+    <Grid container spacing={{ xs: 0, md: 8 }} columns={{ xs: 4, md: 12 }}>
       <Grid xs={4}>
         <Photo
           photo={process.env.PUBLIC_URL + "/ewelinastudio-painting.jpg"}
@@ -27,9 +27,8 @@ function About() {
                 display: "flex",
                 flexWrap: "wrap",
                 backgroundColor: "#1d252a",
-                py: 4,
-                px: 8,
               }}
+              padding={{ xs: "none", s: "1rem", md: "2.4rem" }}
             >
               <TitleH2 text="About Me" />
               <SubTitle

@@ -7,7 +7,7 @@ function Hero(props) {
       className={props.style}
       style={{
         backgroundImage:
-          "url(https://images.unsplash.com/photo-1609875133820-c680be09df88?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2944&q=80)",
+          "url(https://images.unsplash.com/photo-1461958508236-9a742665a0d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80)",
       }}
     >
       {props.children}

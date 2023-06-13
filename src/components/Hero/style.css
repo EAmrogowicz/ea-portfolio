@@ -9,7 +9,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 2.4rem;
+}
+
+.heroOverlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgb(29, 37, 42, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .heroLg {

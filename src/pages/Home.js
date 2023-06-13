@@ -8,8 +8,8 @@ import CustomButton from "../components/Button/button";
 
 function Home() {
   return (
-    <div>
-      <Hero style="hero">
+    <Hero style="hero">
+      <div className="heroOverlay">
         <Title text="Ewelina Amrogowicz" />
         <TitleCaption text="UX / UI Developer" />
 
@@ -17,7 +17,7 @@ function Home() {
           <div>
             <CustomButton
               name="Email Me"
-              link="mailto:contact@ewelina.studio"
+              link="mailto:ewelina@amrogowicz.com"
               class="btnLightM"
             />
           </div>
@@ -31,8 +31,8 @@ function Home() {
           </div> */}
         </Stack>
         <SocialLinks style="socialLinksFixed" />
-      </Hero>
-    </div>
+      </div>
+    </Hero>
   );
 }
 
