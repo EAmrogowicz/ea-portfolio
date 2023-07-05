@@ -5,30 +5,38 @@ import SocialLinks from "../components/Footer/socialLinks";
 import Title from "../components/Text/title";
 import TitleCaption from "../components/Text/titleCaption";
 import CustomButton from "../components/Button/button";
+import Caption from "../components/Text/caption";
 
 function Home() {
   return (
     <Hero style="hero">
       <div className="heroOverlay">
-        <Title text="Ewelina Amrogowicz" />
-        <TitleCaption text="UX / UI Developer" />
+        <TitleCaption text="UX / UI Designer" />
+        <Title text="Ewelina Amrogowicz" top={"1.6rem"} />
+        <Caption
+          text="I love exploring new designs, methods, and building figma plugins!"
+          top={"3.6rem"}
+        />
 
-        <Stack direction="row" spacing={{ xs: 1, sm: 2, md: 4 }}>
+        <Stack
+          direction={{ xs: "column", sm: "row" }}
+          spacing={{ xs: 2, sm: 4, md: 8 }}
+        >
           <div>
             <CustomButton
               name="Email Me"
               link="mailto:ewelina@amrogowicz.com"
-              class="btnLightM"
+              class="btnLightM btnAccent"
             />
           </div>
-          {/* <div>
+          <div>
             <CustomButton
-              name="Portfolio"
-              link="/ea-portfolio/Portfolio"
+              name="Resume"
+              link="https://www.canva.com/design/DAFbUzaKong/i-Ic--PXF2yApyzRGpZgPA/view?utm_content=DAFbUzaKong&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
               class="btnLightM"
-              target="_self"
+              target="_blank"
             />
-          </div> */}
+          </div>
         </Stack>
         <SocialLinks style="socialLinksFixed" />
       </div>

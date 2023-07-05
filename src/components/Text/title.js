@@ -11,11 +11,16 @@ import "./text.css";
 let theme = createTheme();
 theme = responsiveFontSizes(theme);
 
-export default function Title(props) {
+export default function Title({ text, top, bottom }) {
   return (
     <ThemeProvider theme={theme}>
-      <Typography variant="h1" className="h1">
-        {props.text}
+      <Typography
+        variant="h1"
+        className="h1"
+        marginTop={top}
+        marginBottom={bottom}
+      >
+        {text}
       </Typography>
     </ThemeProvider>
   );

@@ -25,4 +25,5 @@
 
 .contactLink:hover {
   color: #ce9334;
+  filter: drop-shadow(0 0 1rem #1d252a);
 }

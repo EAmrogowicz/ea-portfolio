@@ -4,13 +4,15 @@ import Container from "@mui/material/Container";
 import TitleCaption from "../components/Text/titleCaption";
 import SocialLinks from "../components/Footer/socialLinks";
 import CustomButton from "../components/Button/button";
+import MotionPage from "../components/Motion/motionItem";
 
 export default function Contact() {
   return (
-    <Hero style="hero">
-      <div className="heroOverlay">
-        <Container fixed>
-          {/* <Stack
+    <MotionPage>
+      <Hero style="hero">
+        <div className="heroOverlay">
+          <Container fixed>
+            {/* <Stack
             direction="column"
             sx={{ width: "100%" }}
             justifyContent="center"
@@ -22,15 +24,16 @@ export default function Contact() {
 
             <ContactHandler />
           </Stack> */}
-          <TitleCaption text="Connect with me!" />
-          <CustomButton
-            name="Email Me"
-            link="mailto:ewelina@amrogowicz.com"
-            class="btnLightM"
-          />
-          <SocialLinks style="socialLinks" />
-        </Container>
-      </div>
-    </Hero>
+            <TitleCaption text="Connect with me!" />
+            <CustomButton
+              name="Email Me"
+              link="mailto:ewelina@amrogowicz.com"
+              class="btnLightM"
+            />
+            <SocialLinks style="socialLinks" />
+          </Container>
+        </div>
+      </Hero>
+    </MotionPage>
   );
 }
