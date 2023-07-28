@@ -19,12 +19,12 @@ export default function Navlinks() {
         </li>
         <li className="nav-item">
           <NavLink
-            to="/Portfolio"
+            to="/Projects"
             className={({ isActive }) =>
               isActive ? "nav-link active" : "nav-link"
             }
           >
-            Portfolio
+            Projects
           </NavLink>
         </li>
         <li className="nav-item">

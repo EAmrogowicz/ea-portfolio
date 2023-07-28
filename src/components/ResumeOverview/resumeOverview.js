@@ -3,8 +3,8 @@ import Box from "@mui/material/Box";
 import Photo from "../Photo/photo";
 import Quote from "../Text/quote";
 import Divider from "@mui/material/Divider";
-import Caption from "../Text/caption";
-import CustomButton from "../Button/button";
+import Paragraph from "../Text/paragraph";
+import CustomButton from "../button";
 import BasicList from "../List/list";
 import listData from "../List/listData.json";
 
@@ -14,7 +14,7 @@ export default function ProfilePic() {
       <Photo
         photo={process.env.PUBLIC_URL + "/profilePic.jpg"}
         alt="Ewelina in her home studio painting"
-        look="imgSm"
+        styleCss="imgSm"
       />
       <br />
       <Quote
@@ -26,7 +26,7 @@ export default function ProfilePic() {
       <br />
       <Divider sx={{ borderColor: "#1d252a" }} />
       <br />
-      <Caption text="*PERSONAL SKILLS*" />
+      <Paragraph text="*PERSONAL SKILLS*" />
       <BasicList data={listData} />
       <br />
       <Box display="flex" justifyContent="center" mb={4}>

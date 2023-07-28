@@ -1,0 +1,33 @@
+[
+  {
+    "icon": "test",
+    "title": "Creative Design",
+    "description": "I can navigate complex projects with lots of ambiguity. I see how my work connects to other systems and think through possible use cases. "
+  },
+  {
+    "icon": "test",
+    "title": "System Thinking",
+    "description": "I can navigate complex projects with lots of ambiguity. I see how my work connects to other systems and think through possible use cases."
+  },
+  {
+    "icon": "test",
+    "title": "Problem Solving",
+    "description": "I can navigate complex projects with lots of ambiguity. I see how my work connects to other systems and think through possible use cases."
+  },
+
+  {
+    "icon": "test",
+    "title": "Cross-team Collaboration",
+    "description": "I can navigate complex projects with lots of ambiguity. I see how my work connects to other systems and think through possible use cases. "
+  },
+  {
+    "icon": "test",
+    "title": "Front-End Web Development",
+    "description": "I can navigate complex projects with lots of ambiguity. I see how my work connects to other systems and think through possible use cases."
+  },
+  {
+    "icon": "test",
+    "title": "Iterative Prototyping",
+    "description": "I can navigate complex projects with lots of ambiguity. I see how my work connects to other systems and think through possible use cases."
+  }
+]

@@ -1,3 +1,10 @@
+:root {
+  --platinum: #d6dcdd;
+  --charcoal: #334c53;
+  --harvest-gold: #ce9334;
+  --gunmetal: #1d252a;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -18,4 +25,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-color: #1d252a;
 }

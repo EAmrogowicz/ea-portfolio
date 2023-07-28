@@ -4,22 +4,29 @@ body {
 
 .section {
   width: 100%;
-  min-height: calc(100vh - 240px);
-  /* background-color: #1d252a; */
-  color: white;
+  height: 100%;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 1rem 0 2.4rem 0;
-  margin: 3.2rem 0 3.2rem 0;
+  margin: 0;
+
+  color: white;
+
+  background: rgba(29, 37, 42, 0.6);
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(29, 37, 42, 1);
 }
 
 @media (max-width: 600px) {
   .section {
-    padding: 0;
-    margin: 1.6rem 0 1.6rem 0;
+    padding: 1.6rem 0 1.6rem 0;
+    margin: 0;
   }
 }
 

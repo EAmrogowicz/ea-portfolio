@@ -1,28 +1,29 @@
-.h1 {
+/* .h1 {
   line-height: 3.2rem;
   color: white;
   margin-bottom: 1.6rem;
   font-family: "Roboto";
-}
+} */
 
 .h2 {
   color: #1d252a;
-  text-shadow: 2px 2px 0px #334c53;
+  text-shadow: 2px 2px 0px #ce9334;
   font-family: "Roboto";
+  letter-spacing: 2px;
 }
 
-.h4 {
+/* .h4 {
   color: #ce9334;
-  letter-spacing: 2px;
+  letter-spacing: 12px;
   font-family: "Helvetica Neue";
   text-transform: uppercase;
-  font-weight: 400;
-}
+  font-weight: 100;
+} */
 
 .h5 {
   color: #d6dcdd;
   letter-spacing: 2px;
-  font-family: "Helvetica Neue";
+  font-family: "Roboto";
   font-weight: 400;
 }
 
@@ -36,21 +37,20 @@
   margin-top: 2rem;
   border-bottom: 4px solid #d6dcdd;
 }
-
+/* 
 .p {
-  margin-top: 3.2rem;
   line-height: 1.5;
-}
+} */
 
 .quote {
   font-family: "Roboto";
   text-align: center;
 }
 
-.caption {
+/* .caption {
   line-height: 1.2;
   font-size: 1rem;
   color: #d6dcdd;
   text-align: center;
   margin-bottom: 1rem;
-}
+} */

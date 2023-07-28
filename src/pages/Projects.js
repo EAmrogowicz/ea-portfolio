@@ -7,16 +7,16 @@ import IconButton from "@mui/material/IconButton";
 import Button from "@mui/material/Button";
 import * as Icon from "react-bootstrap-icons";
 import portfolioData from "../components/portfolioData.json";
-import TitleH2 from "../components/Text/titleH2";
+import TitleCaption from "../components/Text/titleCaption";
 import SubTitle from "../components/Text/subtitle";
 import Grid from "@mui/material/Unstable_Grid2";
 
-export default function Portfolio() {
+export default function Projects() {
   return (
     <Section>
       <Container fixed>
-        <TitleH2 text="Portfolio" />
-        <SubTitle text="Insight into my projects." />
+        <TitleCaption text="Projects" top={{ xs: "1.6rem", md: "2.4rem" }} />
+        <SubTitle text="Insight into my latest projects!" />
 
         <Grid
           container

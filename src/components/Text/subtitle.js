@@ -8,14 +8,22 @@ import Typography from "@mui/material/Typography";
 
 import "./text.css";
 
-let theme = createTheme();
+let theme = createTheme({
+  typography: {
+    h5: {
+      color: "#d6dcdd",
+      letterSpacing: 2,
+      fontFamily: "Roboto",
+    },
+  },
+});
 theme = responsiveFontSizes(theme);
 
-export default function SubTitle(props) {
+export default function SubTitle({ text, top, bottom }) {
   return (
     <ThemeProvider theme={theme}>
-      <Typography variant="h5" className="h5">
-        {props.text}
+      <Typography variant="h5" marginTop={top} marginBottom={bottom}>
+        {text}
       </Typography>
     </ThemeProvider>
   );

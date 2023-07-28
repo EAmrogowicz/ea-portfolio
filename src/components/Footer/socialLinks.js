@@ -1,43 +1,41 @@
-import * as React from "react";
-import Button from "@mui/material/Button";
-import Stack from "@mui/material/Stack";
-import * as Icon from "react-bootstrap-icons";
+import { Stack } from "@mui/material";
+import ButtonIcon from "../buttonIcon";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
-import "./socialLinks.css";
-
-function SocialLinks(props) {
+function SocialLinks() {
   return (
-    <div className={props.style}>
-      <Stack direction="row" spacing={0} className="socialLinksBox">
-        <Button
-          className="contactLink"
-          variant="primary"
-          href="https://github.com/EAmrogowicz"
-          target="_blank"
-          rel="noopener"
-        >
-          <Icon.Github className="contactLink" />
-        </Button>
-        <Button
-          className="contactLink"
-          variant="primary"
-          href="https://www.linkedin.com/in/ewelina-amrogowicz/"
-          target="_blank"
-          rel="noopener"
-        >
-          <Icon.Linkedin className="contactLink" />
-        </Button>
-        <Button
-          className="contactLink"
-          variant="primary"
-          href="https://www.instagram.com/ewelinastudio/"
-          target="_blank"
-          rel="noopener"
-        >
-          <Icon.Instagram className="contactLink" />
-        </Button>
-      </Stack>
-    </div>
+    <Stack
+      direction="row"
+      spacing={{ xs: 0, md: 2 }}
+      alignItems="flex-end"
+      marginTop="2.4rem"
+    >
+      <ButtonIcon
+        link="https://github.com/EAmrogowicz"
+        target="_blank"
+        rel="noopener"
+      >
+        <GitHubIcon style={{ width: "32", height: "32" }} />
+      </ButtonIcon>
+
+      <ButtonIcon
+        link="https://www.instagram.com/ewelinastudio/"
+        target="_blank"
+        rel="noopener"
+      >
+        <InstagramIcon style={{ width: "32", height: "32" }} />
+      </ButtonIcon>
+
+      <ButtonIcon
+        link="https://www.linkedin.com/in/ewelina-amrogowicz/"
+        target="_blank"
+        rel="noopener"
+      >
+        <LinkedInIcon style={{ width: "32", height: "32" }} />
+      </ButtonIcon>
+    </Stack>
   );
 }
 

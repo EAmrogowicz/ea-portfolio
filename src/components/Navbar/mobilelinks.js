@@ -18,12 +18,12 @@ export default function Mobilelinks() {
       </li>
       <li className="nav-item-m">
         <NavLink
-          to="/Portfolio"
+          to="/Projects"
           className={({ isActive }) =>
             isActive ? "nav-link active" : "nav-link"
           }
         >
-          Portfolio
+          Projects
         </NavLink>
       </li>
       <li className="nav-item-m">
