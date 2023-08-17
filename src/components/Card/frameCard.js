@@ -1,6 +1,6 @@
 import { Card, CardContent, Typography } from "@mui/material";
-import SubTitle from "../Text/subtitle";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import InteractiveList from "./itemList";
 
 const theme = createTheme({
   components: {
@@ -8,8 +8,10 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           color: "white",
-          backgroundColor: "rgba(51, 76, 83, 0.2)",
-          border: "1px solid #334c53",
+          backgroundColor: "transparent",
+          textAlign: "left",
+          // backgroundColor: "rgba(51, 76, 83, 0.2)",
+          // border: "1px solid #334c53",
           height: "100%",
         },
       },
@@ -17,15 +19,21 @@ const theme = createTheme({
   },
 });
 
-export default function FrameCard({ children, name, desc }) {
+export default function FrameCard({ children, name, desc, items }) {
   return (
     <ThemeProvider theme={theme}>
-      <Card>
+      <Card variant="none" width="345px">
         <CardContent>
           {children}
-          <SubTitle text={name} bottom="1rem" />
 
-          <Typography variant="body2">{desc}</Typography>
+          <Typography variant="h6" my="1rem">
+            {name}
+          </Typography>
+
+          <Typography variant="body2" color="#D6DCDD" align="left">
+            {desc}
+            {items && <InteractiveList items={items} />}
+          </Typography>
         </CardContent>
       </Card>
     </ThemeProvider>

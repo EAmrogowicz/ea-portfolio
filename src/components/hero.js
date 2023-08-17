@@ -3,7 +3,7 @@ import { Stack } from "@mui/material";
 function Hero({ photoPath, children }) {
   return (
     <Stack
-      style={{
+      sx={{
         backgroundImage: `url(${photoPath})`,
         height: "calc(100vh - 110px)",
         width: "100%",

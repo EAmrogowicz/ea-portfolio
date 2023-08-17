@@ -8,8 +8,6 @@ const theme = createTheme({
         root: {
           width: "64px",
           height: "64px",
-          padding: "1rem ",
-
           color: "#d6dcdd",
 
           "&:hover": {

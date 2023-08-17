@@ -11,6 +11,8 @@ import TitleCaption from "../components/Text/titleCaption";
 import SubTitle from "../components/Text/subtitle";
 import Grid from "@mui/material/Unstable_Grid2";
 
+import ShowcaseCard from "../components/Card/showcaseCard";
+
 export default function Projects() {
   return (
     <Section>
@@ -24,7 +26,10 @@ export default function Projects() {
           columns={{ xs: 4, md: 12 }}
           mt={4}
         >
-          {portfolioData.map((item) => (
+          <Grid>
+            <ShowcaseCard></ShowcaseCard>{" "}
+          </Grid>
+          {/* {portfolioData.map((item) => (
             <Grid xs={6}>
               <ImageListItem key={item.img}>
                 <img
@@ -60,7 +65,7 @@ export default function Projects() {
                 />
               </ImageListItem>
             </Grid>
-          ))}
+          ))} */}
         </Grid>
 
         {/* <ImageList sx={{ width: "100%", height: "100%" }} gap={8}></ImageList> */}

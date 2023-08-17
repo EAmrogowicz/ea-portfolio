@@ -1,4 +1,4 @@
-import { Grid, Card, CardContent, Typography } from "@mui/material";
+import { Grid } from "@mui/material";
 import FrameCard from "../Card/frameCard";
 import TitleCaption from "../Text/titleCaption";
 import EmojiObjectsIcon from "@mui/icons-material/EmojiObjects";
@@ -7,23 +7,6 @@ import TaskAltIcon from "@mui/icons-material/TaskAlt";
 import WorkspacesIcon from "@mui/icons-material/Workspaces";
 import DeveloperModeIcon from "@mui/icons-material/DeveloperMode";
 import ModelTrainingIcon from "@mui/icons-material/ModelTraining";
-
-import { createTheme, ThemeProvider } from "@mui/material/styles";
-
-const theme = createTheme({
-  components: {
-    MuiCard: {
-      styleOverrides: {
-        root: {
-          color: "white",
-          backgroundColor: "rgba(51, 76, 83, 0.2)",
-          border: "1px solid #334c53",
-          height: "100%",
-        },
-      },
-    },
-  },
-});
 
 export default function SkillSet() {
   return (
@@ -40,10 +23,12 @@ export default function SkillSet() {
         >
           <EmojiObjectsIcon
             sx={{
-              width: "64px",
-              height: "64px",
-              color: "#1d252a",
-              filter: "drop-shadow(0px 0px 6px #ce9334)",
+              width: "44px",
+              height: "44px",
+              color: "#ce9334",
+              backgroundColor: "#1D252A",
+              borderRadius: "50%",
+              padding: "8px",
             }}
           />
         </FrameCard>
@@ -58,10 +43,12 @@ export default function SkillSet() {
         >
           <SettingsSuggestIcon
             sx={{
-              width: "64px",
-              height: "64px",
-              color: "#1d252a",
-              filter: "drop-shadow(0px 0px 6px #ce9334)",
+              width: "44px",
+              height: "44px",
+              color: "#ce9334",
+              backgroundColor: "#1D252A",
+              borderRadius: "50%",
+              padding: "8px",
             }}
           />
         </FrameCard>
@@ -76,10 +63,12 @@ export default function SkillSet() {
         >
           <TaskAltIcon
             sx={{
-              width: "64px",
-              height: "64px",
-              color: "#1d252a",
-              filter: "drop-shadow(0px 0px 6px #ce9334)",
+              width: "44px",
+              height: "44px",
+              color: "#ce9334",
+              backgroundColor: "#1D252A",
+              borderRadius: "50%",
+              padding: "8px",
             }}
           />
         </FrameCard>
@@ -93,10 +82,12 @@ export default function SkillSet() {
         >
           <WorkspacesIcon
             sx={{
-              width: "64px",
-              height: "64px",
-              color: "#1d252a",
-              filter: "drop-shadow(0px 0px 6px #ce9334)",
+              width: "44px",
+              height: "44px",
+              color: "#ce9334",
+              backgroundColor: "#1D252A",
+              borderRadius: "50%",
+              padding: "8px",
             }}
           />
         </FrameCard>
@@ -110,10 +101,12 @@ export default function SkillSet() {
         >
           <DeveloperModeIcon
             sx={{
-              width: "64px",
-              height: "64px",
-              color: "#1d252a",
-              filter: "drop-shadow(0px 0px 6px #ce9334)",
+              width: "44px",
+              height: "44px",
+              color: "#ce9334",
+              backgroundColor: "#1D252A",
+              borderRadius: "50%",
+              padding: "8px",
             }}
           />
         </FrameCard>
@@ -128,10 +121,12 @@ export default function SkillSet() {
         >
           <ModelTrainingIcon
             sx={{
-              width: "64px",
-              height: "64px",
-              color: "#1d252a",
-              filter: "drop-shadow(0px 0px 6px #ce9334)",
+              width: "44px",
+              height: "44px",
+              color: "#ce9334",
+              backgroundColor: "#1D252A",
+              borderRadius: "50%",
+              padding: "8px",
             }}
           />
         </FrameCard>
