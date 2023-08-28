@@ -19,7 +19,7 @@ function Home() {
           top: 0,
           left: 0,
           background:
-            "linear-gradient(to left top, rgb(206, 147, 52, 0.2),rgb(29, 37, 42, 0.95) 90%)",
+            "linear-gradient(to left top, rgb(29, 37, 42, 0.5),rgb(29, 37, 42, 1))",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
