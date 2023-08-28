@@ -1,6 +1,6 @@
 import { Card, CardContent, Typography } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import InteractiveList from "./itemList";
+import InteractiveList from "./interactiveList";
 
 const theme = createTheme({
   components: {
@@ -32,8 +32,8 @@ export default function FrameCard({ children, name, desc, items }) {
 
           <Typography variant="body2" color="#D6DCDD" align="left">
             {desc}
-            {items && <InteractiveList items={items} />}
           </Typography>
+          {items && <InteractiveList items={items} />}
         </CardContent>
       </Card>
     </ThemeProvider>

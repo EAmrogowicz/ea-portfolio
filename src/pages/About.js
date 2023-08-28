@@ -6,7 +6,7 @@ import CustomButton from "../components/button";
 import TitleCaption from "../components/Text/titleCaption";
 import SubTitle from "../components/Text/subtitle";
 import Paragraph from "../components/Text/paragraph";
-import Photo from "../components/Photo/photo";
+import Photo from "../components/photo";
 import SkillSet from "../components/SkillSlider/skillSet";
 
 function About() {

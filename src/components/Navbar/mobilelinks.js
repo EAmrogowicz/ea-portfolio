@@ -26,7 +26,7 @@ export default function Mobilelinks() {
           Projects
         </NavLink>
       </li>
-      <li className="nav-item-m">
+      {/* <li className="nav-item-m">
         <NavLink
           to="/Resume"
           className={({ isActive }) =>
@@ -35,7 +35,7 @@ export default function Mobilelinks() {
         >
           Resume
         </NavLink>
-      </li>
+      </li> */}
       <li className="nav-item-m">
         <NavLink
           to="/Contact"

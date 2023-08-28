@@ -12,7 +12,7 @@ function srcset(image, size, rows = 1, cols = 1) {
   };
 }
 
-export default function QuiltedImageList() {
+export default function QuiltedImageList({ items }) {
   const matches = useMediaQuery("(min-width:600px)");
 
   return (
@@ -22,7 +22,7 @@ export default function QuiltedImageList() {
       cols={matches ? 4 : 2}
       rowHeight={240}
     >
-      {itemData.map((item) => (
+      {items.map((item) => (
         <ImageListItem
           key={item.img}
           cols={item.cols || 1}
@@ -38,34 +38,3 @@ export default function QuiltedImageList() {
     </ImageList>
   );
 }
-
-const itemData = [
-  {
-    img: process.env.PUBLIC_URL + "/projectNichi/nichiLightSM.png",
-    title: "Light mode Greeting Page",
-    rows: 2,
-    cols: 2,
-  },
-  {
-    img: process.env.PUBLIC_URL + "/projectNichi/wireframe.png",
-    rows: 4,
-    cols: 2,
-  },
-  {
-    img: process.env.PUBLIC_URL + "/projectNichi/NichiLogo.png",
-    title: "Designed Logo",
-  },
-  {
-    img: process.env.PUBLIC_URL + "/projectNichi/stylesLook.png",
-    title: "Figma - Look & Feel",
-  },
-
-  {
-    img: process.env.PUBLIC_URL + "/projectNichi/stylesTypog.png",
-    title: "Figma - Design Styles Typography",
-  },
-  {
-    img: process.env.PUBLIC_URL + "/projectNichi/stylesGrid.png",
-    title: "Figma - Design Styles Grid & Spacing",
-  },
-];

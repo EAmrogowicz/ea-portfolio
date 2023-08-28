@@ -1,12 +1,12 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
-import Photo from "../Photo/photo";
+import Photo from "../photo";
 import Quote from "../Text/quote";
 import Divider from "@mui/material/Divider";
 import Paragraph from "../Text/paragraph";
 import CustomButton from "../button";
-import BasicList from "../List/list";
-import listData from "../List/listData.json";
+import BasicList from "../Data/list";
+import listData from "../Data/listData.json";
 
 export default function ProfilePic() {
   return (

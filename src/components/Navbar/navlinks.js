@@ -27,7 +27,7 @@ export default function Navlinks() {
             Projects
           </NavLink>
         </li>
-        <li className="nav-item">
+        {/* <li className="nav-item">
           <NavLink
             to="/Resume"
             className={({ isActive }) =>
@@ -36,7 +36,7 @@ export default function Navlinks() {
           >
             Resume
           </NavLink>
-        </li>
+        </li> */}
         <li className="nav-item">
           <NavLink
             to="/Contact"
