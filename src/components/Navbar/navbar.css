@@ -8,21 +8,21 @@
 }
 
 .navbar {
-  padding: 0.2rem;
+  /* padding: 0.2rem; */
   /* padding-left: 1rem; */
-  background-color: #1d252a;
+  /* background-color: #1d252a;
   font-size: 1rem;
   border-bottom: 1px solid #334c53;
-  box-shadow: none;
+  box-shadow: none; */
 }
 
-.navbar ul {
+/* .navbar ul {
   display: flex;
   list-style: none;
   justify-content: flex-start;
   align-items: center;
   gap: 2rem;
-}
+} */
 
 .nav-link:link,
 .nav-link:visited {

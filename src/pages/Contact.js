@@ -1,7 +1,6 @@
 import Hero from "../components/hero";
 import { Stack, Box } from "@mui/material";
 import SocialLinks from "../components/Footer/socialLinks";
-import Title from "../components/Text/title";
 import TitleCaption from "../components/Text/titleCaption";
 import CustomButton from "../components/button";
 import Paragraph from "../components/Text/paragraph";

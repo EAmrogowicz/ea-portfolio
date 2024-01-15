@@ -1,14 +1,20 @@
-import * as React from "react";
-
-import "./footer.css";
+import { Box } from "@mui/material";
+import Body2 from "../Text/body2";
 
 function Footer() {
   return (
-    <div className="footerSection">
-      <p className="footer">
-        Copyright ©2023 by Ewelina.Studio. All right reserved.
-      </p>
-    </div>
+    <Box
+      sx={{
+        position: "relative",
+        bottom: "0rem",
+        left: 0,
+        right: 0,
+        zIndex: 2,
+        paddingBottom: "1rem",
+      }}
+    >
+      <Body2 text="Copyright ©2024 by Ewelina.Studio. All right reserved" />
+    </Box>
   );
 }
 

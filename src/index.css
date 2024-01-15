@@ -1,7 +1,9 @@
 :root {
   --platinum: #d6dcdd;
   --charcoal: #334c53;
+  --harvest-gold-light: #d5a85f;
   --harvest-gold: #ce9334;
+  --harvest-gold-dark: #ab7723;
   --gunmetal: #1d252a;
 }
 
@@ -9,7 +11,7 @@
   box-sizing: border-box;
 }
 
-html,
+/* html,
 body,
 #root,
 #root > div,
@@ -17,14 +19,4 @@ div[data-reactroot] {
   height: 100%;
   padding: 0;
   margin: 0;
-}
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  background-color: #1d252a;
-}
+} */

@@ -23,7 +23,17 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="static" className="navbar">
+    <AppBar
+      position="static"
+      sx={{
+        zIndex: "2",
+        padding: "0.2rem",
+        backgroundColor: "#1d252a",
+
+        borderBottom: "1px solid #334c53",
+        boxShadow: "none",
+      }}
+    >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           {/* desctop menu home */}
@@ -39,6 +49,7 @@ function ResponsiveAppBar() {
               fontWeight: 700,
               color: "#ce9334",
               textDecoration: "none",
+              letterSpacing: "1px",
             }}
           >
             EwelinaStudio
