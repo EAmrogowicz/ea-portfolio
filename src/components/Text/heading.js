@@ -1,22 +1,8 @@
-import {
-  createTheme,
-  responsiveFontSizes,
-  ThemeProvider,
-} from "@mui/material/styles";
+import { responsiveFontSizes, ThemeProvider } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
+import { MyTheme } from "../themeOptions";
 
-let theme = createTheme({
-  typography: {
-    h5: {
-      color: "#ce9334",
-      fontFamily: "Roboto",
-      // fontFamily: "Helvetica Neue",
-      fontWeight: 700,
-      // textTransform: "uppercase",
-    },
-  },
-});
-theme = responsiveFontSizes(theme);
+let theme = responsiveFontSizes(MyTheme);
 
 export default function Heading({ text, top, bottom, align }) {
   return (

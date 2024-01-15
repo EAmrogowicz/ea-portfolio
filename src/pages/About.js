@@ -3,8 +3,8 @@ import Section from "../components/Section/section";
 import { Box, Stack } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2";
 import CustomButton from "../components/button";
-import TitleCaption from "../components/Text/titleCaption";
-import SubTitle from "../components/Text/subtitle";
+import Subtitle from "../components/Text/subtitle";
+import Heading from "../components/Text/heading";
 import Paragraph from "../components/Text/paragraph";
 import Photo from "../components/photo";
 import SkillSet from "../components/SkillSlider/skillSet";
@@ -28,12 +28,12 @@ function About() {
               }}
               padding={{ xs: "none", s: "1rem", md: "2.4rem" }}
             >
-              <TitleCaption
+              <Subtitle
                 text="About Me"
                 bottom="1rem"
                 top={{ xs: "1.6rem", md: "2.4rem" }}
               />
-              <SubTitle top={"1rem"} text="Hi there, I'm Ewelina!" />
+              <Heading top={"1rem"} text="Hi there, I'm Ewelina!" />
               <Paragraph text="I've always been creative and fascinated by the beauty of art or design. " />
 
               {/* ELEVATOR PITCH */}

@@ -11,8 +11,6 @@ import Mobilelinks from "./mobilelinks";
 
 import * as Icon from "react-bootstrap-icons";
 
-import "./navbar.css";
-
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const handleOpenNavMenu = (event) => {
@@ -29,7 +27,6 @@ function ResponsiveAppBar() {
         zIndex: "2",
         padding: "0.2rem",
         backgroundColor: "#1d252a",
-
         borderBottom: "1px solid #334c53",
         boxShadow: "none",
       }}
@@ -64,6 +61,7 @@ function ResponsiveAppBar() {
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
               color="inherit"
+              sx={{ color: "white" }}
             >
               <Icon.List />
             </IconButton>
@@ -84,8 +82,8 @@ function ResponsiveAppBar() {
               onClick={handleCloseNavMenu}
               sx={{
                 display: { xs: "block", md: "none" },
+                backgroundColor: "rgba(29, 37, 42, 0.9)",
               }}
-              className="shade"
             >
               <Mobilelinks />
             </Menu>
@@ -109,8 +107,6 @@ function ResponsiveAppBar() {
           >
             EwelinaStudio
           </Typography>
-
-          {/* desctop menu home */}
 
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             <Navlinks />

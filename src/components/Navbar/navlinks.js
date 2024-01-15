@@ -1,8 +1,6 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import { Stack, Typography } from "@mui/material";
-
-import "./navbar.css";
 
 export default function Navlinks() {
   return (
@@ -11,44 +9,27 @@ export default function Navlinks() {
         variant="button"
         noWrap
         component="a"
-        sx={{
-          color: "#d6dcdd",
-          fontSize: "1rem",
-          fontWeight: "100",
-          letterSpacing: "1px",
-          textDecoration: "none",
-        }}
+        href="/ea-portfolio/About"
       >
-        <NavLink
-          to="/About"
-          className={({ isActive }) =>
-            isActive ? "nav-link active" : "nav-link"
-          }
-        >
-          About
-        </NavLink>
+        About
       </Typography>
 
-      <Typography sx={{ fontSize: "1rem", fontWeight: "100" }}>
-        <NavLink
-          to="/Projects"
-          className={({ isActive }) =>
-            isActive ? "nav-link active" : "nav-link"
-          }
-        >
-          Projects
-        </NavLink>
+      <Typography
+        variant="button"
+        noWrap
+        component="a"
+        href="/ea-portfolio/Projects"
+      >
+        Projects
       </Typography>
 
-      <Typography sx={{ fontSize: "1rem", fontWeight: "100" }}>
-        <NavLink
-          to="/Contact"
-          className={({ isActive }) =>
-            isActive ? "nav-link active" : "nav-link"
-          }
-        >
-          Contact
-        </NavLink>
+      <Typography
+        variant="button"
+        noWrap
+        component="a"
+        href="/ea-portfolio/Contact"
+      >
+        Contact
       </Typography>
 
       {/* <div>

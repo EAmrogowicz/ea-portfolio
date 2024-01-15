@@ -1,8 +1,9 @@
-import { ThemeOptions } from "@mui/material/styles";
+import { createTheme } from "@mui/material/styles";
 
-export const ThemeOptions = {
+export const MyTheme = createTheme({
+  // PALETTE
   palette: {
-    mode: "dark",
+    mode: "light",
     primary: {
       main: "#CE9334",
     },
@@ -11,31 +12,83 @@ export const ThemeOptions = {
     },
     divider: "#1d252a",
   },
+  // TYPOGRAPHY
   typography: {
-    fontFamily: "Montserrat",
+    fontFamily: [
+      "-apple-system",
+      "BlinkMacSystemFont",
+      '"Segoe UI"',
+      "Roboto",
+      '"Helvetica Neue"',
+      "Arial",
+      "sans-serif",
+      '"Apple Color Emoji"',
+      '"Segoe UI Emoji"',
+      '"Segoe UI Symbol"',
+    ].join(","),
     fontWeightLight: 100,
+    //title
     h1: {
-      fontFamily: "Lora",
+      color: "white",
+      fontFamily: "Roboto",
+      marginBottom: "1.6rem",
     },
-    h3: {
-      fontFamily: "Lora",
-      fontWeight: 700,
+    //title caption -> subtitle
+    h4: {
+      color: "#ce9334",
+      fontFamily: "Helvetica Neue",
+      fontWeight: 100,
+      textTransform: "uppercase",
+      letterSpacing: 16,
     },
+    //heading
     h5: {
-      fontFamily: "Lora",
+      color: "#d6dcdd",
+      fontFamily: "Roboto",
       fontWeight: 400,
+      letterSpacing: 2,
     },
+    //paragraph
     subtitle1: {
-      fontFamily: "Lora",
+      color: " #d6dcdd",
+      marginBottom: "1rem",
+      lineHeight: 1.5,
     },
-    subtitle2: {
-      fontFamily: "Lora",
+    body2: {
+      color: "#334c53",
+      fontSize: "0.8rem",
+      borderTop: "1px solid #334c53",
+      textAlign: "center",
+      margin: "0rem 0",
+      paddingTop: "0.2rem",
     },
-    caption: {
-      fontFamily: "Lora",
+    // caption: {
+    //   fontFamily: "Lora",
+    // },
+    button: {
+      fontFamily: "sans-serif",
+      color: "#d6dcdd",
+      fontSize: "1rem",
+      textDecoration: "none",
+      letterSpacing: 2,
+      "&:hover": {
+        color: "#ce9334",
+      },
     },
     overline: {
       fontWeight: 100,
     },
   },
-};
+  // COMPONENTS
+  components: {
+    MuiPaper: {
+      styleOverrides: {
+        root: {
+          backgroundColor: "transparent",
+          boxShadow: "none",
+          width: "100%",
+        },
+      },
+    },
+  },
+});

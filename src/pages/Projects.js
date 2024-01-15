@@ -1,7 +1,7 @@
 import Section from "../components/Section/section";
 import Container from "@mui/material/Container";
-import TitleCaption from "../components/Text/titleCaption";
-import SubTitle from "../components/Text/subtitle";
+import Subtitle from "../components/Text/subtitle";
+import Heading from "../components/Text/heading";
 import { Stack } from "@mui/material";
 
 import ShowcaseCard from "../components/Card/showcaseCard";
@@ -13,8 +13,8 @@ export default function Projects() {
   return (
     <Section>
       <Container fixed>
-        <TitleCaption text="Projects" top={{ xs: "1.6rem", md: "2.4rem" }} />
-        <SubTitle text="Insight into my latest projects!" />
+        <Subtitle text="Projects" top={{ xs: "1.6rem", md: "2.4rem" }} />
+        <Heading text="Insight into my latest projects!" />
 
         <Stack
           direction="column"

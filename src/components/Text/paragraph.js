@@ -1,21 +1,9 @@
 import React from "react";
-import {
-  createTheme,
-  responsiveFontSizes,
-  ThemeProvider,
-} from "@mui/material/styles";
+import { responsiveFontSizes, ThemeProvider } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
+import { MyTheme } from "../themeOptions";
 
-let theme = createTheme({
-  typography: {
-    subtitle1: {
-      color: " #d6dcdd",
-      marginBottom: "1rem",
-      lineHeight: 1.5,
-    },
-  },
-});
-theme = responsiveFontSizes(theme);
+let theme = responsiveFontSizes(MyTheme);
 
 export default function Paragraph({ text, top, bottom }) {
   return (

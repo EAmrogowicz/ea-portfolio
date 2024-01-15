@@ -1,21 +1,9 @@
 import React from "react";
-import {
-  createTheme,
-  responsiveFontSizes,
-  ThemeProvider,
-} from "@mui/material/styles";
+import { responsiveFontSizes, ThemeProvider } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
+import { MyTheme } from "../themeOptions";
 
-let theme = createTheme({
-  typography: {
-    h1: {
-      color: "white",
-      fontFamily: "Roboto",
-      marginBottom: "1.6rem",
-    },
-  },
-});
-theme = responsiveFontSizes(theme);
+let theme = responsiveFontSizes(MyTheme);
 
 export default function Title({ text, top, bottom }) {
   return (

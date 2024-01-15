@@ -1,24 +1,9 @@
 import React from "react";
-import {
-  createTheme,
-  responsiveFontSizes,
-  ThemeProvider,
-} from "@mui/material/styles";
+import { responsiveFontSizes, ThemeProvider } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
+import { MyTheme } from "../themeOptions";
 
-let theme = createTheme({
-  typography: {
-    body2: {
-      color: "#334c53",
-      fontSize: "0.8rem",
-      borderTop: "1px solid #334c53",
-      textAlign: "center",
-      margin: "0rem 0",
-      paddingTop: "0.2rem",
-    },
-  },
-});
-theme = responsiveFontSizes(theme);
+let theme = responsiveFontSizes(MyTheme);
 
 export default function Body2({ text, top, bottom }) {
   return (

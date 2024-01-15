@@ -2,7 +2,7 @@ import Hero from "../components/hero";
 import { Stack, Box } from "@mui/material";
 import SocialLinks from "../components/Footer/socialLinks";
 import Title from "../components/Text/title";
-import TitleCaption from "../components/Text/titleCaption";
+import Subtitle from "../components/Text/subtitle";
 import CustomButton from "../components/button";
 import Paragraph from "../components/Text/paragraph";
 
@@ -28,7 +28,7 @@ function Home() {
           overflowY: "scroll",
         }}
       >
-        <TitleCaption text="UX / UI Designer" />
+        <Subtitle text="UX / UI Designer" />
         <Title text="Ewelina Amrogowicz" top={{ xs: "0.8rem", md: "1.6rem" }} />
         <Paragraph
           text="I love exploring new designs, methods, and building figma plugins!"

@@ -1,25 +1,14 @@
-import {
-  createTheme,
-  responsiveFontSizes,
-  ThemeProvider,
-} from "@mui/material/styles";
+import React from "react";
+import { responsiveFontSizes, ThemeProvider } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
+import { MyTheme } from "../themeOptions";
 
-let theme = createTheme({
-  typography: {
-    h5: {
-      color: "#d6dcdd",
-      letterSpacing: 2,
-      fontFamily: "Roboto",
-    },
-  },
-});
-theme = responsiveFontSizes(theme);
+let theme = responsiveFontSizes(MyTheme);
 
-export default function SubTitle({ text, top, bottom }) {
+export default function Subtitle({ text, top, bottom }) {
   return (
     <ThemeProvider theme={theme}>
-      <Typography variant="h5" marginTop={top} marginBottom={bottom}>
+      <Typography variant="h4" marginTop={top} marginBottom={bottom}>
         {text}
       </Typography>
     </ThemeProvider>

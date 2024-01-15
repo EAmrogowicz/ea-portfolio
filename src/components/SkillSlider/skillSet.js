@@ -1,6 +1,6 @@
 import { Grid } from "@mui/material";
 import FrameCard from "../Card/frameCard";
-import TitleCaption from "../Text/titleCaption";
+import Subtitle from "../Text/subtitle";
 import EmojiObjectsIcon from "@mui/icons-material/EmojiObjects";
 import SettingsSuggestIcon from "@mui/icons-material/SettingsSuggest";
 import TaskAltIcon from "@mui/icons-material/TaskAlt";
@@ -12,7 +12,7 @@ export default function SkillSet() {
   return (
     <Grid container columns={{ xs: 4, sm: 8, md: 12 }} margin="0">
       <Grid xs={12}>
-        <TitleCaption text="My superpowers" bottom="1rem" />
+        <Subtitle text="My superpowers" bottom="1rem" />
       </Grid>
 
       <Grid xs={4} padding={{ xs: "0.4rem", md: "0.8rem " }}>

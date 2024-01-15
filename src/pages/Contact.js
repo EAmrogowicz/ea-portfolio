@@ -1,7 +1,7 @@
 import Hero from "../components/hero";
 import { Stack, Box } from "@mui/material";
 import SocialLinks from "../components/Footer/socialLinks";
-import TitleCaption from "../components/Text/titleCaption";
+import Subtitle from "../components/Text/subtitle";
 import CustomButton from "../components/button";
 import Paragraph from "../components/Text/paragraph";
 
@@ -27,7 +27,7 @@ function Home() {
           overflowY: "scroll",
         }}
       >
-        <TitleCaption text="Connect with me" />
+        <Subtitle text="Connect with me" />
 
         <Paragraph
           text="I love exploring new designs, methods, and building figma plugins!"
