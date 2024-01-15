@@ -1,16 +1,16 @@
 import { ThemeOptions } from "@mui/material/styles";
 
-export const MyTheme = {
-  // palette: {
-  //   mode: "dark",
-  //   primary: {
-  //     main: "#CE9334",
-  //   },
-  //   secondary: {
-  //     main: "#334C53",
-  //   },
-  //   divider: "#1d252a",
-  // },
+export const ThemeOptions = {
+  palette: {
+    mode: "dark",
+    primary: {
+      main: "#CE9334",
+    },
+    secondary: {
+      main: "#334C53",
+    },
+    divider: "#1d252a",
+  },
   typography: {
     fontFamily: "Montserrat",
     fontWeightLight: 100,
