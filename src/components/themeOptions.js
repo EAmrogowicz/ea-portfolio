@@ -5,12 +5,12 @@ export const MyTheme = createTheme({
   palette: {
     mode: "light",
     primary: {
-      main: "#CE9334",
+      main: "#1d252a",
     },
     secondary: {
-      main: "#334C53",
+      main: "#CE9334",
     },
-    divider: "#1d252a",
+    divider: "#334C53",
   },
   // TYPOGRAPHY
   typography: {

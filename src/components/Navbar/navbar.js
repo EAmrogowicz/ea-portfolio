@@ -1,17 +1,11 @@
 import React from "react";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
-import Menu from "@mui/material/Menu";
-import Container from "@mui/material/Container";
+import { AppBar, Toolbar, Box } from "@mui/material";
+import { IconButton, Typography, Menu, Container } from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
 import Navlinks from "./navlinks";
 import Mobilelinks from "./mobilelinks";
 
-import * as Icon from "react-bootstrap-icons";
-
-function ResponsiveAppBar() {
+function ResponsiveAppBar(props) {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -26,13 +20,12 @@ function ResponsiveAppBar() {
       sx={{
         zIndex: "2",
         padding: "0.2rem",
-        backgroundColor: "#1d252a",
+        backgroundColor: "transparent",
         borderBottom: "1px solid #334c53",
-        boxShadow: "none",
       }}
     >
       <Container maxWidth="xl">
-        <Toolbar disableGutters>
+        <Toolbar>
           {/* desctop menu home */}
           <Typography
             variant="h6"
@@ -63,7 +56,7 @@ function ResponsiveAppBar() {
               color="inherit"
               sx={{ color: "white" }}
             >
-              <Icon.List />
+              <MenuIcon />
             </IconButton>
 
             <Menu
@@ -96,7 +89,7 @@ function ResponsiveAppBar() {
             component="a"
             href="/ea-portfolio"
             sx={{
-              mr: 8,
+              margin: "0 auto",
               display: { xs: "flex", md: "none" },
               flexGrow: 1,
               fontFamily: "Roboto",
@@ -111,6 +104,7 @@ function ResponsiveAppBar() {
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             <Navlinks />
           </Box>
+          <Box sx={{ flexGrow: 0 }}>{props.children}</Box>
         </Toolbar>
       </Container>
     </AppBar>
