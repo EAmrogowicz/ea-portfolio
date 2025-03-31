@@ -6,12 +6,15 @@ function Hero({ photoPath, children }) {
     <Box
       sx={{
         position: "relative", // Ensure proper positioning for the overlay
-        height: "calc(100vh - 110px)",
+        minHeight: "100%",
         width: "100%",
         backgroundImage: `url(${photoPath})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundAttachment: "fixed",
+        margin: "auto 0",
+        backgroundPosition: "center",
+
         "&::before": {
           content: '""',
           position: "absolute",
@@ -31,7 +34,7 @@ function Hero({ photoPath, children }) {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          height: "100%",
+          minHeight: "calc(100vh - 110px)",
         }}
       >
         {children}

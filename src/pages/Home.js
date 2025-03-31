@@ -1,6 +1,5 @@
 import Hero from "../components/hero";
 import { Stack } from "@mui/material";
-import SocialLinks from "../components/Footer/socialLinks";
 import Title from "../components/Text/title";
 import Subtitle from "../components/Text/subtitle";
 import CustomButton from "../components/button";
@@ -14,11 +13,12 @@ function Home() {
       photoPath="https://images.unsplash.com/photo-1461958508236-9a742665a0d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
     >
       <Wrapper>
-        <Subtitle text="UX / UI Designer" />
+        <Subtitle text="UX/UI Web Designer" />
         <Title text="Ewelina Amrogowicz" top={{ xs: "0.8rem", md: "1.6rem" }} />
         <Paragraph
           text="I love exploring new designs, methods, and building figma plugins!"
           top={{ xs: "1.2rem", md: "3.6rem" }}
+          bottom={{ xs: "0.5rem", md: "1rem" }}
         />
         <Stack
           direction={{ xs: "column", sm: "row" }}
@@ -41,7 +41,6 @@ function Home() {
             Send a Message
           </CustomButton>
         </Stack>
-        <SocialLinks />
       </Wrapper>
     </Hero>
   );

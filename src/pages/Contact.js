@@ -1,9 +1,10 @@
 import Hero from "../components/hero";
-import { Stack, Box } from "@mui/material";
+import { Stack } from "@mui/material";
 import SocialLinks from "../components/Footer/socialLinks";
 import Subtitle from "../components/Text/subtitle";
 import CustomButton from "../components/button";
 import Paragraph from "../components/Text/paragraph";
+import Wrapper from "../components/wrapper";
 
 function Home() {
   return (
@@ -11,7 +12,7 @@ function Home() {
       heightReq="calc(100vh - 60px)"
       photoPath="https://images.unsplash.com/photo-1509715931393-9609e71c491f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80"
     >
-      <Box
+      <Wrapper
         style={{
           height: "calc(100vh - 110px)",
           width: "100%",
@@ -57,7 +58,7 @@ function Home() {
           </div>
         </Stack>
         <SocialLinks />
-      </Box>
+      </Wrapper>
     </Hero>
   );
 }

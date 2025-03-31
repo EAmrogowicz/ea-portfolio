@@ -13,7 +13,6 @@ function Wrapper({ children }) {
         alignItems: "flex-start",
         justifyContent: "flex-start", // Align content to the left
         flexDirection: "column",
-        padding: "1rem",
       }}
     >
       {children}

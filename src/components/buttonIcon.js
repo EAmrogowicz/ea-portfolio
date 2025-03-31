@@ -12,13 +12,11 @@ export default function ButtonIcon({ target, link, children }) {
         width: "64px",
         height: "64px",
         background: "none",
-        padding: "2px", // Ensure padding is only 4px
         "&:hover": {
-          background:
+          color:
             theme.palette.mode === "light"
               ? theme.palette.secondary.tint // Light mode hover color
               : theme.palette.secondary.shade, // Dark mode hover color
-          padding: "2px", // Maintain 4px padding on hover
         },
       }}
     >

@@ -18,15 +18,7 @@ const mono = {
   main: "#1d252a",
 };
 
-const commonColors = {
-  lightText: mono.main,
-  darkText: mono.platinum,
-  lightBackground: mono.white,
-  darkBackground: mono.main,
-};
-
 export const createThemeStyles = (mode) => ({
-  // PALETTE: Define colors for light and dark modes
   palette: {
     mode,
     primary: {
@@ -38,28 +30,22 @@ export const createThemeStyles = (mode) => ({
     secondary: {
       ...secondary,
     },
-    text: {
-      ...(mode === "light"
-        ? {
-            primary: mono.main,
-            secondary: secondary.main,
-          }
-        : {
-            primary: "#d6dcdd",
-            secondary: secondary.main,
-          }),
+    mono: {
+      main: mono.main, // Dark text color
+      platinum: mono.platinum, // Light text color
+      white: mono.white, // White color
     },
     background: {
       ...(mode === "light"
         ? {
             default: mono.white,
             paper: mono.platinum,
-            overlay: `linear-gradient(to right, ${mono.white}, transparent)`,
+            overlay: `linear-gradient(to right, ${mono.white} 40%, transparent)`,
           }
         : {
             default: mono.main,
             paper: mono.main,
-            overlay: `linear-gradient(to right, ${secondary.shade}, transparent)`,
+            overlay: `linear-gradient(to right, ${secondary.shade} 40%, transparent)`,
           }),
     },
   },
@@ -102,7 +88,7 @@ export const createThemeStyles = (mode) => ({
         ? { color: primary.shade }
         : { color: primary.main }),
       fontFamily: "Helvetica Neue",
-      fontWeight: 100,
+      fontWeight: 200,
       textTransform: "uppercase",
       letterSpacing: 16,
     },
@@ -121,11 +107,7 @@ export const createThemeStyles = (mode) => ({
       textDecoration: "none",
       letterSpacing: "1px",
     },
-    subtitle1: {
-      ...(mode === "light" ? { color: mono.main } : { color: mono.platinum }),
-      marginBottom: "1rem",
-      lineHeight: 1.5,
-    },
+
     body1: {
       ...(mode === "light" ? { color: mono.main } : { color: mono.platinum }),
       fontSize: "1rem",
@@ -180,7 +162,7 @@ export const createThemeStyles = (mode) => ({
           textTransform: "uppercase",
           fontWeight: 600,
           fontSize: "1rem",
-          padding: "4px 24px",
+          padding: "0px 24px",
           ...(mode === "light"
             ? {
                 color: primary.main,
@@ -217,11 +199,12 @@ export const createThemeStyles = (mode) => ({
           ...(mode === "light"
             ? {
                 color: mono.main, // Light mode text color
+                border: `1px solid ${mono.main}`, // Light mode border color
               }
             : {
-                color: mono.platinum, // Dark mode text color for better contrast
+                color: mono.platinum, // Dark mode text color
+                border: `1px solid ${mono.platinum}`, // Dark mode border color
               }),
-          border: `1px solid ${mono.main}`,
           "&:hover": {
             backgroundColor: mono.main,
             ...(mode === "light"
@@ -231,7 +214,7 @@ export const createThemeStyles = (mode) => ({
               : {
                   color: primary.main, // Dark mode hover text color
                 }),
-            border: `1px solid ${primary.main}`,
+            border: `1px solid ${primary.main}`, // Hover border color
           },
         },
       },

@@ -6,12 +6,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 function SocialLinks() {
   return (
-    <Stack
-      direction="row"
-      spacing={{ xs: 0, md: 2 }}
-      alignItems="flex-end"
-      marginTop="2.4rem"
-    >
+    <Stack direction="row" spacing={{ xs: 0, md: 2 }} alignItems="flex-end">
       <ButtonIcon
         link="https://github.com/EAmrogowicz"
         target="_blank"

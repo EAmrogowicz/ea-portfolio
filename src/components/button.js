@@ -12,24 +12,8 @@ export default function CustomButton({
       target={target}
       href={link}
       sx={{
-        ...(variant === "primary" && {
-          backgroundColor: "primary.main",
-          color: "mono.main",
-          border: "1px solid",
-          "&:hover": {
-            backgroundColor: "mono.main",
-            color: "primary.main",
-          },
-        }),
-        ...(variant === "secondary" && {
-          backgroundColor: "transparent",
-          color: "mono.main",
-          border: "1px solid",
-          "&:hover": {
-            backgroundColor: "mono.main",
-            color: "primary.main",
-          },
-        }),
+        ...(variant === "primary"),
+        ...(variant === "secondary"),
       }}
     >
       {children}
