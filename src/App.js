@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import ResponsiveAppBar from "./components/Navbar/navbar";
 import { IconButton, Box } from "@mui/material";
-import Footer from "./components/Footer/footer";
+import Footer from "./components/footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";

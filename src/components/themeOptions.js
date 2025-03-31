@@ -136,7 +136,6 @@ export const createThemeStyles = (mode) => ({
         ? { color: secondary.main }
         : { color: secondary.tint }),
       fontSize: "0.8rem",
-      borderTop: "1px solid #334c53",
       textAlign: "center",
       margin: "0rem 0",
       paddingTop: "0.2rem",

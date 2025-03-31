@@ -20,7 +20,6 @@ function Home() {
           text="I love exploring new designs, methods, and building figma plugins!"
           top={{ xs: "1.2rem", md: "3.6rem" }}
         />
-
         <Stack
           direction={{ xs: "column", sm: "row" }}
           spacing={{ xs: 2, sm: 4, md: 8 }}
