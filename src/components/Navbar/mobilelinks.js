@@ -4,7 +4,7 @@ import { Stack, Typography } from "@mui/material";
 
 export default function Mobilelinks() {
   return (
-    <Stack spacing={4} sx={{ backgroundColor: "transparent" }}>
+    <Stack spacing={4} sx={{ background: "transparent" }}>
       <Typography
         variant="button"
         noWrap

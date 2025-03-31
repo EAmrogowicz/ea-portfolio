@@ -20,7 +20,7 @@ function ResponsiveAppBar(props) {
       sx={{
         zIndex: "2",
         padding: "0.2rem",
-        backgroundColor: "transparent",
+        background: "transparent",
         borderBottom: "1px solid #334c53",
       }}
     >
@@ -33,13 +33,7 @@ function ResponsiveAppBar(props) {
             component="a"
             href="/ea-portfolio"
             sx={{
-              mr: 0,
               display: { xs: "none", md: "flex" },
-              fontFamily: "Roboto",
-              fontWeight: 700,
-              color: "#ce9334",
-              textDecoration: "none",
-              letterSpacing: "1px",
             }}
           >
             EwelinaStudio
@@ -54,7 +48,6 @@ function ResponsiveAppBar(props) {
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
               color="inherit"
-              sx={{ color: "white" }}
             >
               <MenuIcon />
             </IconButton>
@@ -75,7 +68,7 @@ function ResponsiveAppBar(props) {
               onClick={handleCloseNavMenu}
               sx={{
                 display: { xs: "block", md: "none" },
-                backgroundColor: "rgba(29, 37, 42, 0.9)",
+                // backgroundColor: "rgba(29, 37, 42, 0.9)",
               }}
             >
               <Mobilelinks />
@@ -84,7 +77,7 @@ function ResponsiveAppBar(props) {
 
           {/* mobile menu home */}
           <Typography
-            variant="h5"
+            variant="h6"
             noWrap
             component="a"
             href="/ea-portfolio"
@@ -92,10 +85,6 @@ function ResponsiveAppBar(props) {
               margin: "0 auto",
               display: { xs: "flex", md: "none" },
               flexGrow: 1,
-              fontFamily: "Roboto",
-              fontWeight: 700,
-              color: "#ce9334",
-              textDecoration: "none",
             }}
           >
             EwelinaStudio

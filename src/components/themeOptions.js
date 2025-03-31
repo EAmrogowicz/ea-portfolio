@@ -1,16 +1,52 @@
-import { createTheme } from "@mui/material/styles";
+import darkScrollbar from "@mui/material/darkScrollbar";
 
-export const MyTheme = createTheme({
+const primary = {
+  tint: "#d3a83c",
+  main: "#ce9334",
+  shade: "#c47026",
+};
+
+const secondary = {
+  tint: "#405f68",
+  main: "#334c53",
+  shade: "#23373c",
+};
+
+const mono = {
+  white: "#fff",
+  platinum: "#d6dcdd",
+  main: "#1d252a",
+};
+
+export const createThemeStyles = (mode) => ({
   // PALETTE
   palette: {
-    mode: "light",
+    mode,
     primary: {
-      main: "#1d252a",
+      ...primary,
+      ...(mode === "dark" && {
+        main: primary.shade,
+      }),
     },
-    secondary: {
-      main: "#CE9334",
+
+    text: {
+      ...(mode === "light"
+        ? {
+            main: mono.main,
+            secondary: secondary.main,
+          }
+        : {
+            primary: "#d6dcdd",
+            secondary: secondary.main,
+          }),
     },
-    divider: "#334C53",
+
+    ...(mode === "dark" && {
+      background: {
+        default: mono.main,
+        paper: mono.main,
+      },
+    }),
   },
   // TYPOGRAPHY
   typography: {
@@ -35,7 +71,13 @@ export const MyTheme = createTheme({
     },
     //title caption -> subtitle
     h4: {
-      color: "#ce9334",
+      ...(mode === "light"
+        ? {
+            color: primary.shade,
+          }
+        : {
+            color: primary.main,
+          }),
       fontFamily: "Helvetica Neue",
       fontWeight: 100,
       textTransform: "uppercase",
@@ -43,19 +85,51 @@ export const MyTheme = createTheme({
     },
     //heading
     h5: {
-      color: "#d6dcdd",
+      ...(mode === "light"
+        ? {
+            color: mono.main,
+          }
+        : {
+            color: mono.white,
+          }),
       fontFamily: "Roboto",
       fontWeight: 400,
       letterSpacing: 2,
     },
+    //menu logo
+    h6: {
+      ...(mode === "light"
+        ? {
+            color: primary.shade,
+          }
+        : {
+            color: primary.main,
+          }),
+      fontFamily: "Roboto",
+      fontWeight: 700,
+      textDecoration: "none",
+      letterSpacing: "1px",
+    },
     //paragraph
     subtitle1: {
-      color: " #d6dcdd",
+      ...(mode === "light"
+        ? {
+            color: mono.white,
+          }
+        : {
+            color: mono.platinum,
+          }),
       marginBottom: "1rem",
       lineHeight: 1.5,
     },
     body2: {
-      color: "#334c53",
+      ...(mode === "light"
+        ? {
+            color: secondary.main,
+          }
+        : {
+            color: secondary.tint,
+          }),
       fontSize: "0.8rem",
       borderTop: "1px solid #334c53",
       textAlign: "center",
@@ -66,8 +140,14 @@ export const MyTheme = createTheme({
     //   fontFamily: "Lora",
     // },
     button: {
+      ...(mode === "light"
+        ? {
+            color: secondary.main,
+          }
+        : {
+            color: mono.platinum,
+          }),
       fontFamily: "sans-serif",
-      color: "#d6dcdd",
       fontSize: "1rem",
       textDecoration: "none",
       letterSpacing: 2,
@@ -84,11 +164,16 @@ export const MyTheme = createTheme({
     MuiPaper: {
       styleOverrides: {
         root: {
-          backgroundColor: "transparent",
-          boxShadow: "none",
           width: "100%",
+          boxShadow: "none",
         },
       },
+    },
+    //dark scrollbars
+    MuiCssBaseline: {
+      styleOverrides: (themeParam) => ({
+        body: themeParam.palette.mode === "dark" ? darkScrollbar() : null,
+      }),
     },
   },
 });

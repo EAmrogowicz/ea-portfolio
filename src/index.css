@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --platinum: #d6dcdd;
   --charcoal: #334c53;
   --harvest-gold-light: #d5a85f;
@@ -9,9 +9,11 @@
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-/* html,
+html,
 body,
 #root,
 #root > div,

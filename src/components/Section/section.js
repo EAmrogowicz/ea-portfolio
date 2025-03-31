@@ -16,10 +16,6 @@ function Section({ bcolor, children }) {
         margin: "0",
 
         color: "white",
-        // background: "rgba(29, 37, 42, 0.6)",
-        boxShadow: "0 4px 12px rgba(0, 0, 0, 0.4)",
-        backdropFilter: "blur(4px)",
-        border: "1px solid rgba(29, 37, 42, 1)",
       }}
     >
       {children}
