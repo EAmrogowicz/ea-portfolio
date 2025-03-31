@@ -27,21 +27,35 @@ function Home() {
           justifyContent="center"
           alignItems="center"
         >
-          <div>
+          <CustomButton
+            variant="primary"
+            target="_blank"
+            link="https://www.canva.com/design/DAGEqKV3w8g/3vM-e-2-CwOKc9oNdnbW_A/view?utm_content=DAGEqKV3w8g&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h1e8823e6b7"
+          >
+            Resume
+          </CustomButton>
+          <CustomButton
+            variant="secondary"
+            target="_blank"
+            link="mailto:ewelina@amrogowicz.com"
+          >
+            Send a Message
+          </CustomButton>
+          {/* <div>
             <CustomButton
-              variant="btnAccent"
+              variant="secondary"
               name="Email Me"
               link="mailto:ewelina@amrogowicz.com"
             />
           </div>
           <div>
             <CustomButton
-              variant="btn"
+              variant="Primary"
               name="Resume"
               link="https://www.canva.com/design/DAGEqKV3w8g/3vM-e-2-CwOKc9oNdnbW_A/view?utm_content=DAGEqKV3w8g&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h1e8823e6b7"
               target="_blank"
             />
-          </div>
+          </div> */}
         </Stack>
         <SocialLinks />
       </HeroBox>

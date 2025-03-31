@@ -35,6 +35,9 @@ export const createThemeStyles = (mode) => ({
         main: primary.shade,
       }),
     },
+    secondary: {
+      ...secondary,
+    },
     text: {
       ...(mode === "light"
         ? {
@@ -174,12 +177,11 @@ export const createThemeStyles = (mode) => ({
     MuiButton: {
       styleOverrides: {
         root: {
+          borderRadius: "50px",
           textTransform: "uppercase",
-          padding: "8px 16px",
-          fontSize: "1rem",
-          fontFamily: "sans-serif",
           fontWeight: 600,
-          borderRadius: "8px", // Add consistent border radius
+          fontSize: "1rem",
+          padding: "4px 24px",
           ...(mode === "light"
             ? {
                 color: primary.main,
@@ -199,6 +201,38 @@ export const createThemeStyles = (mode) => ({
                   color: primary.main,
                   backgroundColor: "transparent",
                 }),
+          },
+        },
+        primary: {
+          backgroundColor: primary.main,
+          color: mono.main,
+          border: `1px solid ${mono.main}`,
+          "&:hover": {
+            backgroundColor: mono.main,
+            color: primary.main,
+            border: `1px solid ${primary.main}`,
+          },
+        },
+        secondary: {
+          backgroundColor: "transparent",
+          ...(mode === "light"
+            ? {
+                color: mono.main, // Light mode text color
+              }
+            : {
+                color: mono.platinum, // Dark mode text color for better contrast
+              }),
+          border: `1px solid ${mono.main}`,
+          "&:hover": {
+            backgroundColor: mono.main,
+            ...(mode === "light"
+              ? {
+                  color: "transparent", // Light mode hover text color
+                }
+              : {
+                  color: primary.main, // Dark mode hover text color
+                }),
+            border: `1px solid ${primary.main}`,
           },
         },
       },
