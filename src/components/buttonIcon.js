@@ -1,31 +1,26 @@
 import Button from "@mui/material/Button";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
-
-const theme = createTheme({
-  components: {
-    MuiButton: {
-      styleOverrides: {
-        root: {
-          width: "64px",
-          height: "64px",
-          color: "#d6dcdd",
-
-          "&:hover": {
-            color: "#ce9334",
-            background: "none",
-          },
-        },
-      },
-    },
-  },
-});
+import { useTheme } from "@mui/material/styles";
 
 export default function ButtonIcon({ target, link, children }) {
+  const theme = useTheme();
+
   return (
-    <ThemeProvider theme={theme}>
-      <Button target={target} href={link}>
-        {children}
-      </Button>
-    </ThemeProvider>
+    <Button
+      target={target}
+      href={link}
+      sx={{
+        width: "64px",
+        height: "64px",
+        background: "none",
+        "&:hover": {
+          background:
+            theme.palette.mode === "light"
+              ? theme.palette.secondary.tint // Light mode hover color
+              : theme.palette.secondary.shade, // Dark mode hover color
+        },
+      }}
+    >
+      {children}
+    </Button>
   );
 }

@@ -18,8 +18,15 @@ const mono = {
   main: "#1d252a",
 };
 
+const commonColors = {
+  lightText: mono.main,
+  darkText: mono.platinum,
+  lightBackground: mono.white,
+  darkBackground: mono.main,
+};
+
 export const createThemeStyles = (mode) => ({
-  // PALETTE
+  // PALETTE: Define colors for light and dark modes
   palette: {
     mode,
     primary: {
@@ -28,11 +35,10 @@ export const createThemeStyles = (mode) => ({
         main: primary.shade,
       }),
     },
-
     text: {
       ...(mode === "light"
         ? {
-            main: mono.main,
+            primary: mono.main,
             secondary: secondary.main,
           }
         : {
@@ -40,13 +46,19 @@ export const createThemeStyles = (mode) => ({
             secondary: secondary.main,
           }),
     },
-
-    ...(mode === "dark" && {
-      background: {
-        default: mono.main,
-        paper: mono.main,
-      },
-    }),
+    background: {
+      ...(mode === "light"
+        ? {
+            default: mono.white,
+            paper: mono.platinum,
+            overlay: `linear-gradient(to right, ${mono.white}, transparent)`,
+          }
+        : {
+            default: mono.main,
+            paper: mono.main,
+            overlay: `linear-gradient(to right, ${secondary.shade}, transparent)`,
+          }),
+    },
   },
   // TYPOGRAPHY
   typography: {
@@ -63,90 +75,73 @@ export const createThemeStyles = (mode) => ({
       '"Segoe UI Symbol"',
     ].join(","),
     fontWeightLight: 100,
-    //title
     h1: {
-      color: "white",
+      ...(mode === "light" ? { color: mono.main } : { color: mono.white }),
       fontFamily: "Roboto",
       marginBottom: "1.6rem",
     },
-    //title caption -> subtitle
+    h2: {
+      ...(mode === "light" ? { color: primary.main } : { color: primary.tint }),
+      fontFamily: "Roboto",
+      fontWeight: 300,
+      marginBottom: "1.2rem",
+    },
+    h3: {
+      ...(mode === "light"
+        ? { color: secondary.main }
+        : { color: secondary.tint }),
+      fontFamily: "Roboto",
+      fontWeight: 400,
+      marginBottom: "1rem",
+    },
     h4: {
       ...(mode === "light"
-        ? {
-            color: primary.shade,
-          }
-        : {
-            color: primary.main,
-          }),
+        ? { color: primary.shade }
+        : { color: primary.main }),
       fontFamily: "Helvetica Neue",
       fontWeight: 100,
       textTransform: "uppercase",
       letterSpacing: 16,
     },
-    //heading
     h5: {
-      ...(mode === "light"
-        ? {
-            color: mono.main,
-          }
-        : {
-            color: mono.white,
-          }),
+      ...(mode === "light" ? { color: mono.main } : { color: mono.white }),
       fontFamily: "Roboto",
       fontWeight: 400,
       letterSpacing: 2,
     },
-    //menu logo
     h6: {
       ...(mode === "light"
-        ? {
-            color: primary.shade,
-          }
-        : {
-            color: primary.main,
-          }),
+        ? { color: primary.shade }
+        : { color: primary.main }),
       fontFamily: "Roboto",
       fontWeight: 700,
       textDecoration: "none",
       letterSpacing: "1px",
     },
-    //paragraph
     subtitle1: {
-      ...(mode === "light"
-        ? {
-            color: mono.white,
-          }
-        : {
-            color: mono.platinum,
-          }),
+      ...(mode === "light" ? { color: mono.main } : { color: mono.platinum }),
       marginBottom: "1rem",
       lineHeight: 1.5,
     },
+    body1: {
+      ...(mode === "light" ? { color: mono.main } : { color: mono.platinum }),
+      fontSize: "1rem",
+      lineHeight: 1.6,
+    },
     body2: {
       ...(mode === "light"
-        ? {
-            color: secondary.main,
-          }
-        : {
-            color: secondary.tint,
-          }),
+        ? { color: secondary.main }
+        : { color: secondary.tint }),
       fontSize: "0.8rem",
       borderTop: "1px solid #334c53",
       textAlign: "center",
       margin: "0rem 0",
       paddingTop: "0.2rem",
     },
-    // caption: {
-    //   fontFamily: "Lora",
-    // },
     button: {
       ...(mode === "light"
-        ? {
-            color: secondary.main,
-          }
-        : {
-            color: mono.platinum,
-          }),
+        ? { color: secondary.main }
+        : { color: mono.platinum }),
       fontFamily: "sans-serif",
       fontSize: "1rem",
       textDecoration: "none",
@@ -158,6 +153,13 @@ export const createThemeStyles = (mode) => ({
     overline: {
       fontWeight: 100,
     },
+    caption: {
+      ...(mode === "light"
+        ? { color: secondary.tint }
+        : { color: secondary.main }),
+      fontSize: "0.75rem",
+      lineHeight: 1.4,
+    },
   },
   // COMPONENTS
   components: {
@@ -166,6 +168,56 @@ export const createThemeStyles = (mode) => ({
         root: {
           width: "100%",
           boxShadow: "none",
+        },
+      },
+    },
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          textTransform: "uppercase",
+          padding: "8px 16px",
+          fontSize: "1rem",
+          fontFamily: "sans-serif",
+          fontWeight: 600,
+          borderRadius: "8px", // Add consistent border radius
+          ...(mode === "light"
+            ? {
+                color: primary.main,
+                backgroundColor: mono.white,
+              }
+            : {
+                color: mono.platinum,
+                backgroundColor: mono.main,
+              }),
+          "&:hover": {
+            ...(mode === "light"
+              ? {
+                  color: primary.tint,
+                  backgroundColor: "transparent",
+                }
+              : {
+                  color: primary.main,
+                  backgroundColor: "transparent",
+                }),
+          },
+        },
+      },
+    },
+    MuiTypography: {
+      styleOverrides: {
+        root: {
+          ...(mode === "light"
+            ? { color: mono.main }
+            : { color: mono.platinum }),
+        },
+      },
+    },
+    MuiAppBar: {
+      styleOverrides: {
+        root: {
+          ...(mode === "light"
+            ? { backgroundColor: mono.white }
+            : { backgroundColor: mono.main }),
         },
       },
     },

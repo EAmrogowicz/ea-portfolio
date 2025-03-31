@@ -13,7 +13,7 @@ function Hero({ photoPath, children }) {
 
         justifyContent: "center",
         alignItems: "center",
-        textAlign: "center",
+        textAlign: "left",
       }}
     >
       {children}

@@ -13,22 +13,7 @@ function Home() {
       heightReq="calc(100vh - 60px)"
       photoPath="https://images.unsplash.com/photo-1461958508236-9a742665a0d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
     >
-      <HeroBox
-      // style={{
-      //   height: "calc(100vh - 110px)",
-      //   width: "100%",
-      //   top: 0,
-      //   left: 0,
-      //   background:
-      //     "linear-gradient(to left top, rgb(29, 37, 42, 0.5),rgb(29, 37, 42, 1))",
-      //   display: "flex",
-      //   alignItems: "center",
-      //   justifyContent: "center",
-      //   flexDirection: "column",
-      //   padding: "1rem",
-      //   overflowY: "scroll",
-      // }}
-      >
+      <HeroBox>
         <Subtitle text="UX / UI Designer" />
         <Title text="Ewelina Amrogowicz" top={{ xs: "0.8rem", md: "1.6rem" }} />
         <Paragraph
