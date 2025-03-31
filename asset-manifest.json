@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/ea-portfolio/static/js/main.0b525ff8.js",
+    "main.js": "/ea-portfolio/static/js/main.3f67d976.js",
     "index.html": "/ea-portfolio/index.html",
-    "main.0b525ff8.js.map": "/ea-portfolio/static/js/main.0b525ff8.js.map"
+    "main.3f67d976.js.map": "/ea-portfolio/static/js/main.3f67d976.js.map"
   },
   "entrypoints": [
-    "static/js/main.0b525ff8.js"
+    "static/js/main.3f67d976.js"
   ]
 }
