@@ -1,7 +1,7 @@
 import { Stack } from "@mui/material";
 import ButtonIcon from "../buttonIcon";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import InstagramIcon from "@mui/icons-material/Instagram";
+
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 function SocialLinks() {
@@ -13,14 +13,6 @@ function SocialLinks() {
         rel="noopener"
       >
         <GitHubIcon style={{ width: "32", height: "32" }} />
-      </ButtonIcon>
-
-      <ButtonIcon
-        link="https://www.instagram.com/ewelinastudio/"
-        target="_blank"
-        rel="noopener"
-      >
-        <InstagramIcon style={{ width: "32", height: "32" }} />
       </ButtonIcon>
 
       <ButtonIcon
