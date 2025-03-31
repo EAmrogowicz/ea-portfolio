@@ -1,11 +1,11 @@
 import Hero from "../components/hero";
-import { Stack, Box } from "@mui/material";
+import { Stack } from "@mui/material";
 import SocialLinks from "../components/Footer/socialLinks";
 import Title from "../components/Text/title";
 import Subtitle from "../components/Text/subtitle";
 import CustomButton from "../components/button";
 import Paragraph from "../components/Text/paragraph";
-import HeroBox from "../components/heroBox";
+import Wrapper from "../components/wrapper";
 
 function Home() {
   return (
@@ -13,7 +13,7 @@ function Home() {
       heightReq="calc(100vh - 60px)"
       photoPath="https://images.unsplash.com/photo-1461958508236-9a742665a0d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
     >
-      <HeroBox>
+      <Wrapper>
         <Subtitle text="UX / UI Designer" />
         <Title text="Ewelina Amrogowicz" top={{ xs: "0.8rem", md: "1.6rem" }} />
         <Paragraph
@@ -24,8 +24,8 @@ function Home() {
         <Stack
           direction={{ xs: "column", sm: "row" }}
           spacing={{ xs: 2, sm: 4, md: 8 }}
-          justifyContent="center"
-          alignItems="center"
+          justifyContent="flex-start"
+          alignItems="flex-start"
         >
           <CustomButton
             variant="primary"
@@ -41,24 +41,9 @@ function Home() {
           >
             Send a Message
           </CustomButton>
-          {/* <div>
-            <CustomButton
-              variant="secondary"
-              name="Email Me"
-              link="mailto:ewelina@amrogowicz.com"
-            />
-          </div>
-          <div>
-            <CustomButton
-              variant="Primary"
-              name="Resume"
-              link="https://www.canva.com/design/DAGEqKV3w8g/3vM-e-2-CwOKc9oNdnbW_A/view?utm_content=DAGEqKV3w8g&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h1e8823e6b7"
-              target="_blank"
-            />
-          </div> */}
         </Stack>
         <SocialLinks />
-      </HeroBox>
+      </Wrapper>
     </Hero>
   );
 }

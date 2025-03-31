@@ -1,6 +1,6 @@
 import { Box, useTheme } from "@mui/material";
 
-function HeroBox({ children }) {
+function Wrapper({ children }) {
   const theme = useTheme();
   return (
     <Box
@@ -11,8 +11,8 @@ function HeroBox({ children }) {
         left: 0,
         background: theme.palette.background.overlay, // Use the overlay gradient
         display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
+        alignItems: "flex-start",
+        justifyContent: "flex-start", // Align content to the left
         flexDirection: "column",
         padding: "1rem",
         overflowY: "scroll",
@@ -23,4 +23,4 @@ function HeroBox({ children }) {
   );
 }
 
-export default HeroBox;
+export default Wrapper;

@@ -1,23 +1,25 @@
-import { Stack } from "@mui/material";
+import { Box, useTheme } from "@mui/material";
 
-function Hero({ photoPath, children }) {
+function Hero({ children }) {
+  const theme = useTheme();
   return (
-    <Stack
-      sx={{
-        backgroundImage: `url(${photoPath})`,
+    <Box
+      style={{
         height: "calc(100vh - 110px)",
         width: "100%",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        backgroundAttachment: "fixed",
-
-        justifyContent: "center",
-        alignItems: "center",
-        textAlign: "left",
+        top: 0,
+        left: 0,
+        background: theme.palette.background.overlay, // Ensure comma is here
+        display: "flex",
+        alignItems: "flex-start",
+        justifyContent: "flex-start",
+        flexDirection: "column",
+        padding: "1rem",
+        overflowY: "scroll",
       }}
     >
       {children}
-    </Stack>
+    </Box>
   );
 }
 
