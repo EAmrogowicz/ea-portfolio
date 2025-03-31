@@ -9,7 +9,7 @@ export default function Navlinks() {
         variant="button"
         noWrap
         component="a"
-        href="/ea-portfolio/About"
+        href="/ea-portfolio/about"
       >
         About
       </Typography>
@@ -18,7 +18,7 @@ export default function Navlinks() {
         variant="button"
         noWrap
         component="a"
-        href="/ea-portfolio/Projects"
+        href="/ea-portfolio/projects"
       >
         Projects
       </Typography>
@@ -27,7 +27,7 @@ export default function Navlinks() {
         variant="button"
         noWrap
         component="a"
-        href="/ea-portfolio/Contact"
+        href="/ea-portfolio/contact"
       >
         Contact
       </Typography>

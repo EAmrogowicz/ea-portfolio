@@ -9,7 +9,7 @@ export default function Mobilelinks() {
         variant="button"
         noWrap
         component="a"
-        href="/ea-portfolio/About"
+        href="/ea-portfolio/about"
         sx={{ textAlign: "center", padding: "1rem" }}
       >
         About
@@ -19,7 +19,7 @@ export default function Mobilelinks() {
         variant="button"
         noWrap
         component="a"
-        href="/ea-portfolio/Projects"
+        href="/ea-portfolio/projects"
         sx={{ textAlign: "center", padding: "1rem" }}
       >
         Projects
@@ -29,7 +29,7 @@ export default function Mobilelinks() {
         variant="button"
         noWrap
         component="a"
-        href="/ea-portfolio/Contact"
+        href="/ea-portfolio/contact"
         sx={{ textAlign: "center", padding: "1rem" }}
       >
         Contact
