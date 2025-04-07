@@ -13,9 +13,6 @@ export default function Mobilelinks() {
         background: theme.palette.background.paper, // Use theme background color
         padding: "1rem", // Add padding
         borderRadius: "4px", // Add border radius
-        position: "absolute", // Position the menu absolutely
-        top: "64px", // Offset from the top to match the height of the navigation (adjust as needed)
-        right: "1rem", // Align the menu to the right
         boxShadow: theme.shadows[3], // Add a subtle shadow for better visibility
         zIndex: 10, // Ensure the menu appears above other elements
       }}
@@ -47,20 +44,6 @@ export default function Mobilelinks() {
         })}
       >
         Projects
-      </NavLink>
-      <NavLink
-        to="/contact"
-        end
-        style={({ isActive }) => ({
-          textDecoration: "none",
-          textTransform: "uppercase",
-          color: isActive
-            ? theme.palette.primary.main
-            : theme.palette.text.primary,
-          fontWeight: isActive ? "bold" : "normal",
-        })}
-      >
-        Contact
       </NavLink>
     </Stack>
   );
