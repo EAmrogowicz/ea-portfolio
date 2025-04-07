@@ -40,7 +40,7 @@ export const createThemeStyles = (mode) => ({
         ? {
             default: mono.white,
             paper: mono.platinum,
-            overlay: `linear-gradient(to right, ${mono.white} 40%, transparent)`,
+            overlay: `linear-gradient(to right, ${mono.platinum} 40%, transparent)`,
           }
         : {
             default: mono.main,
