@@ -1,73 +1,45 @@
 import React from "react";
-// import { NavLink } from "react-router-dom";
-import { Stack, Typography } from "@mui/material";
+import { NavLink } from "react-router-dom";
+import { Stack } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
 
 export default function Navlinks() {
+  const theme = useTheme(); // Access the theme
+
   return (
-    <Stack direction="row" spacing={4} ml={6}>
-      <Typography
-        variant="button"
-        noWrap
-        component="a"
-        href="/ea-portfolio/about"
+    <Stack direction="row" spacing={4} ml={4}>
+      <NavLink
+        to="/about"
+        end
+        style={({ isActive }) => ({
+          textDecoration: "none",
+          textTransform: "uppercase", // Ensure text is uppercase
+          color: theme.palette.text.primary, // Keep color consistent with theme
+          fontWeight: isActive ? "bold" : "normal", // Make active link bold
+          transition: "color 0.3s ease", // Smooth transition for hover effect
+          "&:hover": {
+            color: theme.palette.primary.shade, // Change to primary.main on hover
+          },
+        })}
       >
         About
-      </Typography>
-
-      <Typography
-        variant="button"
-        noWrap
-        component="a"
-        href="/ea-portfolio/projects"
+      </NavLink>
+      <NavLink
+        to="/projects"
+        end
+        style={({ isActive }) => ({
+          textDecoration: "none",
+          textTransform: "uppercase",
+          color: theme.palette.text.primary, // Keep color consistent with theme
+          fontWeight: isActive ? "bold" : "normal", // Make active link bold
+          transition: "color 0.3s ease", // Smooth transition for hover effect
+          "&:hover": {
+            color: theme.palette.primary.shade, // Change to primary.main on hover
+          },
+        })}
       >
         Projects
-      </Typography>
-
-      <Typography
-        variant="button"
-        noWrap
-        component="a"
-        href="/ea-portfolio/contact"
-      >
-        Contact
-      </Typography>
-
-      {/* <div>
-        <ul className="navbar-nav">
-          <li>
-            <NavLink
-              to="/About"
-              end
-              className={({ isActive }) =>
-                isActive ? "nav-link active" : "nav-link"
-              }
-            >
-              About
-            </NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink
-              to="/Projects"
-              className={({ isActive }) =>
-                isActive ? "nav-link active" : "nav-link"
-              }
-            >
-              Projects
-            </NavLink>
-          </li>
-
-          <li className="nav-item">
-            <NavLink
-              to="/Contact"
-              className={({ isActive }) =>
-                isActive ? "nav-link active" : "nav-link"
-              }
-            >
-              Contact
-            </NavLink>
-          </li>
-        </ul>
-      </div> */}
+      </NavLink>
     </Stack>
   );
 }

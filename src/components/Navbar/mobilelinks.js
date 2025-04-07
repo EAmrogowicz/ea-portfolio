@@ -1,82 +1,55 @@
 import React from "react";
-// import { NavLink } from "react-router-dom";
-import { Stack, Typography } from "@mui/material";
+import { NavLink } from "react-router-dom";
+import { Stack } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
 
 export default function Mobilelinks() {
+  const theme = useTheme(); // Access the theme
+
   return (
-    <Stack spacing={4} sx={{ background: "transparent" }}>
-      <Typography
-        variant="button"
-        noWrap
-        component="a"
-        href="/ea-portfolio/about"
-        sx={{ textAlign: "center", padding: "1rem" }}
+    <Stack spacing={4} sx={{ background: "transparent", padding: "1rem" }}>
+      <NavLink
+        to="/about"
+        end
+        style={({ isActive }) => ({
+          textDecoration: "none",
+          textTransform: "uppercase", // Ensure text is uppercase
+          color: isActive
+            ? theme.palette.primary.main // Active color from theme
+            : theme.palette.text.primary, // Inactive color from theme
+          fontWeight: isActive ? "bold" : "normal",
+        })}
       >
         About
-      </Typography>
-
-      <Typography
-        variant="button"
-        noWrap
-        component="a"
-        href="/ea-portfolio/projects"
-        sx={{ textAlign: "center", padding: "1rem" }}
+      </NavLink>
+      <NavLink
+        to="/projects"
+        end
+        style={({ isActive }) => ({
+          textDecoration: "none",
+          textTransform: "uppercase",
+          color: isActive
+            ? theme.palette.primary.main
+            : theme.palette.text.primary,
+          fontWeight: isActive ? "bold" : "normal",
+        })}
       >
         Projects
-      </Typography>
-
-      <Typography
-        variant="button"
-        noWrap
-        component="a"
-        href="/ea-portfolio/contact"
-        sx={{ textAlign: "center", padding: "1rem" }}
+      </NavLink>
+      <NavLink
+        to="/contact"
+        end
+        style={({ isActive }) => ({
+          textDecoration: "none",
+          textTransform: "uppercase",
+          color: isActive
+            ? theme.palette.primary.main
+            : theme.palette.text.primary,
+          fontWeight: isActive ? "bold" : "normal",
+        })}
       >
         Contact
-      </Typography>
+      </NavLink>
     </Stack>
-    // <div>
-    //   <li className="nav-item-m">
-    //     <NavLink
-    //       to="/About"
-    //       end
-    //       className={({ isActive }) =>
-    //         isActive ? "nav-link active" : "nav-link"
-    //       }
-    //     >
-    //       About
-    //     </NavLink>
-    //   </li>
-    //   <li className="nav-item-m">
-    //     <NavLink
-    //       to="/Projects"
-    //       className={({ isActive }) =>
-    //         isActive ? "nav-link active" : "nav-link"
-    //       }
-    //     >
-    //       Projects
-    //     </NavLink>
-    //   </li>
-    //   {/* <li className="nav-item-m">
-    //     <NavLink
-    //       to="/Resume"
-    //       className={({ isActive }) =>
-    //         isActive ? "nav-link active" : "nav-link"
-    //       }
-    //     >
-    //       Resume
-    //     </NavLink>
-    //   </li> */}
-    //   <li className="nav-item-m">
-    //     <NavLink
-    //       to="/Contact"
-    //       className={({ isActive }) =>
-    //         isActive ? "nav-link active" : "nav-link"
-    //       }
-    //     >
-    //       Contact
-    //     </NavLink>
-    //   </li>
-    // </div>
   );
 }

@@ -13,6 +13,8 @@ function Footer() {
         position: "relative",
         bottom: "0rem",
         height: "auto",
+        margin: "0",
+        padding: "0",
         width: "100%",
         display: "flex",
         justifyContent: "center",

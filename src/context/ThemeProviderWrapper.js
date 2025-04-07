@@ -1,5 +1,9 @@
 import React, { createContext, useMemo, useState, useEffect } from "react";
-import { ThemeProvider, createTheme } from "@mui/material/styles";
+import {
+  ThemeProvider,
+  createTheme,
+  responsiveFontSizes,
+} from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import { createThemeStyles } from "./themeOptions"; // Corrected import path
 
@@ -26,7 +30,11 @@ export default function ThemeProviderWrapper({ children }) {
     []
   );
 
-  const theme = useMemo(() => createTheme(createThemeStyles(mode)), [mode]);
+  // Create the theme and apply responsiveFontSizes
+  const theme = useMemo(() => {
+    let baseTheme = createTheme(createThemeStyles(mode));
+    return responsiveFontSizes(baseTheme); // Apply responsive font sizes
+  }, [mode]);
 
   return (
     <ColorModeContext.Provider value={colorMode}>

@@ -9,8 +9,8 @@ export default function ButtonIcon({ target, link, children }) {
       target={target}
       href={link}
       sx={{
-        width: "64px",
-        height: "64px",
+        width: "24px",
+        height: "24px",
         background: "none",
         "&:hover": {
           color:

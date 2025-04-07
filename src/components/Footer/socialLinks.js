@@ -12,7 +12,7 @@ function SocialLinks() {
         target="_blank"
         rel="noopener"
       >
-        <GitHubIcon style={{ width: "32", height: "32" }} />
+        <GitHubIcon style={{ width: "24", height: "24" }} />
       </ButtonIcon>
 
       <ButtonIcon
@@ -20,7 +20,7 @@ function SocialLinks() {
         target="_blank"
         rel="noopener"
       >
-        <LinkedInIcon style={{ width: "32", height: "32" }} />
+        <LinkedInIcon style={{ width: "24", height: "24" }} />
       </ButtonIcon>
     </Stack>
   );
