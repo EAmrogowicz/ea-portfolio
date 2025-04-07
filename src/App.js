@@ -43,7 +43,7 @@ function App() {
             </Box>
           </ResponsiveAppBar>
           {/* <Header /> */}
-          <Routes>
+          <Routes basename="/ea-portfolio">
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
