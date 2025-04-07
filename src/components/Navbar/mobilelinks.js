@@ -7,7 +7,19 @@ export default function Mobilelinks() {
   const theme = useTheme(); // Access the theme
 
   return (
-    <Stack spacing={4} sx={{ background: "transparent", padding: "1rem" }}>
+    <Stack
+      spacing={4}
+      sx={{
+        background: theme.palette.background.paper, // Use theme background color
+        padding: "1rem", // Add padding
+        borderRadius: "4px", // Add border radius
+        position: "absolute", // Position the menu absolutely
+        top: "64px", // Offset from the top to match the height of the navigation (adjust as needed)
+        right: "1rem", // Align the menu to the right
+        boxShadow: theme.shadows[3], // Add a subtle shadow for better visibility
+        zIndex: 10, // Ensure the menu appears above other elements
+      }}
+    >
       <NavLink
         to="/about"
         end

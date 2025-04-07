@@ -146,10 +146,11 @@ function ResponsiveAppBar(props) {
         <Box
           sx={{
             display: "flex", // Ensure items are in a row
-            flexDirection: "row", // Align items horizontally
+            flexDirection: { xs: "row-reverse", md: "row" }, // Reverse order on mobile (xs) and normal order on desktop (md)
             alignItems: "center",
             justifyContent: "flex-start",
             flexGrow: 1, // Allow the box to grow
+            gap: 2, // Add spacing between Branding and MobileMenu/DesktopMenu
           }}
         >
           <Branding />
