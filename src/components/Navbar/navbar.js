@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { AppBar, Toolbar, Box, useMediaQuery, useTheme } from "@mui/material";
 import { IconButton, Typography, Menu, Container } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -42,13 +43,13 @@ function MobileMenu({ anchorElNav, handleOpenNavMenu, handleCloseNavMenu }) {
           id="menu-appbar"
           anchorEl={anchorElNav}
           anchorOrigin={{
-            vertical: "bottom",
-            horizontal: "left",
+            vertical: "top",
+            horizontal: "right",
           }}
           keepMounted
           transformOrigin={{
             vertical: "top",
-            horizontal: "left",
+            horizontal: "right",
           }}
           open={Boolean(anchorElNav)}
           onClose={handleCloseNavMenu}
@@ -59,25 +60,26 @@ function MobileMenu({ anchorElNav, handleOpenNavMenu, handleCloseNavMenu }) {
           <Mobilelinks />
         </Menu>
       </Box>
-      <Branding />
     </>
   );
 }
 
+MobileMenu.propTypes = {
+  anchorElNav: PropTypes.object,
+  handleOpenNavMenu: PropTypes.func.isRequired,
+  handleCloseNavMenu: PropTypes.func.isRequired,
+};
+
 function DesktopMenu() {
   return (
-    <>
-      <Branding />
-      <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-        <Navlinks />
-      </Box>
-    </>
+    <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+      <Navlinks />
+    </Box>
   );
 }
 
 function ResponsiveAppBar(props) {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const isMobile = useMediaQuery((theme) => theme.breakpoints.down("sm"));
   const theme = useTheme();
 
   const handleOpenNavMenu = (event) => {
@@ -92,14 +94,15 @@ function ResponsiveAppBar(props) {
       position="static"
       sx={{
         zIndex: "2",
-        padding: "0.2rem",
+        padding: theme.spacing(1), // Use theme spacing
         background: theme.palette.background.default, // Use theme background
         borderBottom: `1px solid ${theme.palette.secondary.main}`, // Use theme border color
       }}
     >
       <Container maxWidth="xl">
         <Toolbar>
-          {isMobile ? (
+          <Branding />
+          {useMediaQuery(theme.breakpoints.down("sm")) ? (
             <MobileMenu
               anchorElNav={anchorElNav}
               handleOpenNavMenu={handleOpenNavMenu}
@@ -114,5 +117,9 @@ function ResponsiveAppBar(props) {
     </AppBar>
   );
 }
+
+ResponsiveAppBar.propTypes = {
+  children: PropTypes.node,
+};
 
 export default ResponsiveAppBar;
